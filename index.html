@@ -132,7 +132,7 @@
 
             </div>
             <div class="row">
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-6 d-flex justify-content-end p-0">
                     <div class="why-us">
                         <span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +150,7 @@
                         <button class="btn btn-primary plus"></button>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-6 d-flex justify-content-end p-0">
                     <div class="why-us bg-white">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 d-flex justify-content-start">
+                <div class="col-6 d-flex justify-content-start p-0">
                     <div class="why-us">
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <g clip-path="url(#clip0_500_16662)">
@@ -179,7 +179,7 @@
                         <button class="btn btn-primary plus"></button>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-6 d-flex justify-content-end p-0">
                     <div class="why-us bg-blue">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -273,7 +273,7 @@
             <img src="images/home/section5.png" alt="">
         </div>
     </section>
-    <section class="review">
+    <section class="review position-relative">
         <div class="container-sm">
             <div class="row">
                 <div class="col-12 text-center">
@@ -328,31 +328,32 @@
                 <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+
 
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
     <section class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="section-title">Свяжитесь с нами</h2>
-                    <p>Заполните форму и менеджер свяжется с вами</p>
+                    <h2 class="section-title text-center">Свяжитесь с нами</h2>
+                    <p class="text-center">Заполните форму и менеджер свяжется с вами</p>
 
                 </div>
             </div>
             <div class="row">
                 <form class="row row-cols-lg-auto g-3 align-items-center d-flex">
-                    <div class="col-12">
+                    <div class="col-5 form-col">
                         <div class="input-group">
 
                             <input type="text" class="form-control"  placeholder="Имя">
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-5 form-col">
                         <div class="input-group">
 
                             <input type="email" class="form-control"  placeholder="E-mail">
@@ -360,8 +361,16 @@
                     </div>
 
 
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-secondary">отправить</button>
+                    <div class="col-2 mt-0">
+                        <button type="submit" class="btn btn-secondary text-uppercase">отправить <span class="btn-arrow"></span></button>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Я согласен на <a href="">обработку персональных данных</a>
+                            </label>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -378,7 +387,10 @@
                     </a>
                 </div>
                 <div class="col">
-                    <h5 class="sub-title dark">Адрес</h5>
+                    <h5 class="sub-title dark text-uppercase"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7239 10.9375C17.1723 10.9375 17.394 10.3927 17.073 10.0796L9.96189 3.14186C9.76767 2.95238 9.45778 2.95239 9.26356 3.14187L2.15272 10.0796C1.83175 10.3927 2.05346 10.9375 2.50189 10.9375H3.18554C3.46168 10.9375 3.68554 11.1613 3.68554 11.4375V16.3761C3.68554 16.6523 3.90939 16.8761 4.18554 16.8761H6.64748H7.62845C7.90459 16.8761 8.12845 16.6523 8.12845 16.3761V13.1208C8.12845 12.8447 8.35231 12.6208 8.62845 12.6208H10.5904C10.8665 12.6208 11.0904 12.8447 11.0904 13.1208V16.3761C11.0904 16.6523 11.3142 16.8761 11.5904 16.8761H12.5714H15.0333C15.3094 16.8761 15.5333 16.6523 15.5333 16.3761V11.4375C15.5333 11.1613 15.7572 10.9375 16.0333 10.9375H16.7239Z" fill="#F2F5F7" fill-opacity="0.7"/>
+                    </svg>
+                         Адрес</h5>
                     <div class="footer-address">
                         <h2>Москва</h2>
                         <p>Петровско-Разумовский проезд 19/1</p>
@@ -389,11 +401,17 @@
                     </div>
                 </div>
                 <div class="col">
-                    <h5 class="sub-title dark">Почта</h5>
+                    <h5 class="sub-title dark text-uppercase"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5079 4.28589C17.7866 4.28589 17.9147 4.63278 17.7029 4.8139L10.1996 11.2295C10.0873 11.3254 9.9219 11.3254 9.80965 11.2295L2.30634 4.8139C2.09451 4.63278 2.2226 4.28589 2.5013 4.28589H17.5079ZM9.80756 12.3814C9.9183 12.4725 10.078 12.4725 10.1888 12.3814L17.5094 6.35878C17.7051 6.19775 18 6.33699 18 6.59046V15.4146C18 15.5803 17.8657 15.7146 17.7 15.7146H2.3C2.13431 15.7146 2 15.5803 2 15.4146V6.59349C2 6.34002 2.29486 6.20078 2.4906 6.36181L9.80756 12.3814Z" fill="#F2F5F7" fill-opacity="0.7"/>
+                    </svg>
+                         Почта</h5>
                     <div class="footer-address">
                         <h2>hsn@hs-nauka.ru</h2>
                     </div>
-                    <h5 class="sub-title dark">телефон</h5>
+                    <h5 class="sub-title dark text-uppercase"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7953 13.8979C16.8412 13.9697 16.9056 14.0946 16.9331 14.1756C16.9928 14.3421 17.0181 14.6035 16.9859 14.7539C16.94 14.9737 16.7769 15.2489 16.3359 15.8458C16.0694 16.2044 15.5916 16.6971 15.3987 16.8128C14.9416 17.0811 14.5534 17.0649 13.6599 16.7388C12.1277 16.1789 10.6508 15.36 9.22661 14.2843C6.50001 12.2254 4.51541 9.63212 3.18543 6.38418C3.01545 5.97008 2.98789 5.8359 3.00396 5.51204C3.02235 5.11877 3.14406 4.82036 3.46105 4.39934C3.8125 3.93435 4.63486 3.26811 5.07356 3.09692C5.48936 2.93495 5.86603 2.97662 6.16005 3.21718C6.32316 3.35371 7.1409 4.36233 7.46938 4.83424C7.71745 5.1928 8.0597 5.748 8.19064 6.00248C8.36063 6.3379 8.39047 6.67102 8.28022 6.99722C8.19293 7.25401 8.11714 7.3396 7.64852 7.71434C7.40966 7.90867 7.19373 8.08682 7.17304 8.10992C7.15239 8.1354 7.10645 8.21635 7.07198 8.29268C6.93188 8.59574 7.01687 9.00985 7.35222 9.68765C7.61181 10.2151 7.94025 10.6824 8.42265 11.2122C8.83154 11.6633 9.36442 12.119 9.78018 12.3734C10.3154 12.7019 11.0114 12.9518 11.395 12.9541C11.5604 12.9541 11.7947 12.887 11.9141 12.8037C11.9624 12.7714 12.1438 12.5655 12.3207 12.3457C12.7594 11.7974 12.8973 11.6748 13.1591 11.6008C13.4026 11.5291 13.7311 11.6054 14.1744 11.8344C14.9508 12.2346 16.5059 13.4584 16.7953 13.8979Z" fill="#F2F5F7" fill-opacity="0.7"/>
+                    </svg>
+                         телефон</h5>
                     <div class="footer-address">
                         <h2>+7 (495) 755-77-00</h2>
 
@@ -401,7 +419,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container footer-bottom">
             <div class="row">
                 <div class="col">
                    <h4>О нас</h4>
@@ -439,14 +457,17 @@
     <div class="copyright">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 align-items-center d-flex">
                     <p>Copyright © 2024 АО «ХC-Наука»</p>
                 </div>
                 <div class="col-4">
                     <a href="" class="blue">Политика конфиденциальности</a>
                 </div>
-                <div class="col-4 justify-content-end">
-                    <a href="">Разработка сайта</a>
+                <div class="col-4 justify-content-end d-flex">
+                    <a href="" class="light-blue ">Разработка сайта <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.50088 16.5L7.50089 15.5L13.5009 9.50008L8.00089 9.50008L8.00089 8.08009H15.9208V16L14.5008 16V10.5001L8.50088 16.5Z" fill="#0070BB" stroke="#0070BB" stroke-width="0.5"/>
+                    </svg>
+                    </a>
                 </div>
             </div>
         </div>
