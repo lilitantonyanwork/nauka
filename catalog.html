@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet"  href="css/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+  <div class="top-bar">
+    <div class="container-fluid d-flex justify-content-between align-items-center h-100">
+      <div class="lang">
+        <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+      </div>
+      <div class="addresses d-flex">
+        <div class="blue address-icon position-relative d-flex align-items-center">г. Москва, Петровско-Разумовский проезд 19/1</div>
+        <div  class="blue address-icon position-relative d-flex align-items-center">г. Кимры, ул. Кленовая, 39</div>
+        <div><a href="mailto:hsn@hs-nauka.ru" class="blue text-decoration-none mail-icon position-relative d-flex align-items-center">hsn@hs-nauka.ru</a></div>
+        <div><a href="tel:+7 (495) 755-77-00"  class="blue text-decoration-none phone-icon position-relative d-flex align-items-center">+7 (495) 755-77-00</a></div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">продукция</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              о компании
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">миссия</a></li>
+              <li><a class="dropdown-item" href="#">история (планы и цели)</a></li>
+              <li><a class="dropdown-item" href="#">лицензии и сертификаты. Сертификация Минпромторга, ФАП-285, бывшие (AS, Nadcap), ОТ и ООС</a></li>
+              <li><a class="dropdown-item" href="#">Наши клиенты</a></li>
+              <li><a class="dropdown-item" href="#">Отзывы</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Технологические процессы
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">о компании</a></li>
+              <li><a class="dropdown-item" href="#">о компании</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " >Контакты</a>
+          </li>
+        </ul>
+        <div class="contact-us">
+          <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="catalog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="section-title text-center blue">Каталог</h2>
+          <p class="blue section-subtitle text-center m-auto">АО «ХС-Наука», являясь изготовителем широкой линейки теплообменных аппаратов различного назначения и габаритов, располагает современным производством, позволяющим самостоятельно выполнять ключевые технологические процессы и оснащённым современным, высокопроизводительным оборудованием ведущих мировых производителей.</p>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-3 catalog-aside">
+          <ul class="product-type ">
+            <li class="active">
+              <span class="aside-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="path-1-inside-1_1123_3974" fill="white">
+                    <path d="M6.29782 13.9998H4.65577L6.42979 8.74976H3.48789L2.85431 9.71401C2.69497 9.95574 2.47797 10.1541 2.22284 10.2913C1.9677 10.4284 1.68244 10.5001 1.3927 10.4998H0.00934308L1.29402 6.99976L0 3.49976H1.3857C1.67494 3.49937 1.95975 3.57076 2.21456 3.70749C2.46936 3.84423 2.68618 4.04205 2.84555 4.28317L3.48789 5.24976H6.43154L4.65577 -0.000244111H6.29782C6.61254 -0.000302302 6.92147 0.0843363 7.19212 0.244775C7.46278 0.405214 7.68517 0.635527 7.83593 0.911506L10.2546 5.24976H12.1845C12.6069 5.24445 13.0176 5.3876 13.345 5.65418C13.6724 5.92076 13.8956 6.2938 13.9755 6.70809C14.018 6.95912 14.0051 7.21639 13.9378 7.46194C13.8705 7.70749 13.7504 7.93542 13.5858 8.12981C13.4212 8.32421 13.2162 8.48039 12.9849 8.58746C12.7537 8.69454 12.5019 8.74992 12.247 8.74976H10.2546L7.83359 13.0921C7.68249 13.367 7.46023 13.5962 7.19006 13.7559C6.91989 13.9156 6.61173 13.9998 6.29782 13.9998Z"/>
+                    </mask>
+                    <path d="M6.29782 13.9998H4.65577L6.42979 8.74976H3.48789L2.85431 9.71401C2.69497 9.95574 2.47797 10.1541 2.22284 10.2913C1.9677 10.4284 1.68244 10.5001 1.3927 10.4998H0.00934308L1.29402 6.99976L0 3.49976H1.3857C1.67494 3.49937 1.95975 3.57076 2.21456 3.70749C2.46936 3.84423 2.68618 4.04205 2.84555 4.28317L3.48789 5.24976H6.43154L4.65577 -0.000244111H6.29782C6.61254 -0.000302302 6.92147 0.0843363 7.19212 0.244775C7.46278 0.405214 7.68517 0.635527 7.83593 0.911506L10.2546 5.24976H12.1845C12.6069 5.24445 13.0176 5.3876 13.345 5.65418C13.6724 5.92076 13.8956 6.2938 13.9755 6.70809C14.018 6.95912 14.0051 7.21639 13.9378 7.46194C13.8705 7.70749 13.7504 7.93542 13.5858 8.12981C13.4212 8.32421 13.2162 8.48039 12.9849 8.58746C12.7537 8.69454 12.5019 8.74992 12.247 8.74976H10.2546L7.83359 13.0921C7.68249 13.367 7.46023 13.5962 7.19006 13.7559C6.91989 13.9156 6.61173 13.9998 6.29782 13.9998Z" fill="#373737"/>
+                    <path d="M6.29782 13.9998L6.30057 -7.33358H6.29782V13.9998ZM4.65577 13.9998L-15.5549 7.17041L-25.0713 35.3331H4.65577V13.9998ZM6.42979 8.74976L26.6405 15.5791L36.1569 -12.5836H6.42979V8.74976ZM3.48789 8.74976V-12.5836H-8.02112L-14.3411 -2.96511L3.48789 8.74976ZM2.85431 9.71401L20.6662 21.4548L20.6748 21.4418L20.6833 21.4289L2.85431 9.71401ZM1.3927 10.4998L1.41586 -10.8336L1.40428 -10.8336H1.3927V10.4998ZM0.00934308 10.4998L-20.0175 3.1489L-30.5461 31.8331H0.00934308V10.4998ZM1.29402 6.99976L21.3209 14.3506L24.0288 6.97304L21.3036 -0.398157L1.29402 6.99976ZM0 3.49976V-17.8336H-30.632L-20.0095 10.8977L0 3.49976ZM1.3857 3.49976V24.8331H1.39982L1.41395 24.8331L1.3857 3.49976ZM2.84555 4.28317L-14.9518 16.0461L-14.937 16.0684L-14.9222 16.0906L2.84555 4.28317ZM3.48789 5.24976L-14.2799 17.0572L-7.94956 26.5831H3.48789V5.24976ZM6.43154 5.24976V26.5831H36.168L26.6402 -1.58565L6.43154 5.24976ZM4.65577 -0.000244111V-21.3336H-25.0807L-15.5528 6.83516L4.65577 -0.000244111ZM6.29782 -0.000244111V21.3331H6.30177L6.29782 -0.000244111ZM7.83593 0.911506L-10.8863 11.1384L-10.8421 11.2194L-10.7972 11.2999L7.83593 0.911506ZM10.2546 5.24976L-8.37846 15.6382L-2.27639 26.5831H10.2546V5.24976ZM12.1845 5.24976V26.5831H12.3184L12.4523 26.5814L12.1845 5.24976ZM13.9755 6.70809L35.0098 3.14892L34.9689 2.90692L34.9224 2.66593L13.9755 6.70809ZM12.247 8.74976L12.261 -12.5836H12.247V8.74976ZM10.2546 8.74976V-12.5836H-2.27624L-8.37835 -1.63887L10.2546 8.74976ZM7.83359 13.0921L-10.7994 2.70346L-10.8305 2.75934L-10.8614 2.81541L7.83359 13.0921ZM6.29782 -7.33358H4.65577V35.3331H6.29782V-7.33358ZM24.8664 20.8291L26.6405 15.5791L-13.7809 1.92041L-15.5549 7.17041L24.8664 20.8291ZM6.42979 -12.5836H3.48789V30.0831H6.42979V-12.5836ZM-14.3411 -2.96511L-14.9747 -2.00086L20.6833 21.4289L21.3169 20.4646L-14.3411 -2.96511ZM-14.9576 -2.02679C-13.1698 -4.73912 -10.7366 -6.96252 -7.87863 -8.49893L12.3243 29.0815C15.6925 27.2707 18.5597 24.6506 20.6662 21.4548L-14.9576 -2.02679ZM-7.87863 -8.49893C-5.02082 -10.0353 -1.82695 -10.8371 1.41586 -10.8336L1.36955 31.8331C5.19183 31.8372 8.95623 30.8921 12.3243 29.0815L-7.87863 -8.49893ZM1.3927 -10.8336H0.00934308V31.8331H1.3927V-10.8336ZM20.0362 17.8506L21.3209 14.3506L-18.7329 -0.351104L-20.0175 3.1489L20.0362 17.8506ZM21.3036 -0.398157L20.0095 -3.89816L-20.0095 10.8977L-18.7155 14.3977L21.3036 -0.398157ZM0 24.8331H1.3857V-17.8336H0V24.8331ZM1.41395 24.8331C-1.82573 24.8374 -5.01681 24.0379 -7.87301 22.5052L12.3021 -15.0902C8.93632 -16.8964 5.17561 -17.8386 1.35744 -17.8336L1.41395 24.8331ZM-7.87301 22.5052C-10.7293 20.9723 -13.1623 18.7536 -14.9518 16.0461L20.6429 -7.47973C18.5347 -10.6695 15.6681 -13.2839 12.3021 -15.0902L-7.87301 22.5052ZM-14.9222 16.0906L-14.2799 17.0572L21.2557 -6.55772L20.6133 -7.5243L-14.9222 16.0906ZM3.48789 26.5831H6.43154V-16.0836H3.48789V26.5831ZM26.6402 -1.58565L24.8644 -6.83565L-15.5528 6.83516L-13.7771 12.0852L26.6402 -1.58565ZM4.65577 21.3331H6.29782V-21.3336H4.65577V21.3331ZM6.30177 21.3331C2.7883 21.3337 -0.661814 20.3889 -3.68614 18.5962L18.0704 -18.1066C14.5047 -20.2203 10.4368 -21.3343 6.29388 -21.3336L6.30177 21.3331ZM-3.68614 18.5962C-6.71063 16.8034 -9.19866 14.2279 -10.8863 11.1384L26.5582 -9.31538C24.569 -12.9569 21.6362 -15.9929 18.0704 -18.1066L-3.68614 18.5962ZM-10.7972 11.2999L-8.37846 15.6382L28.8877 -5.13868L26.469 -9.47693L-10.7972 11.2999ZM10.2546 26.5831H12.1845V-16.0836H10.2546V26.5831ZM12.4523 26.5814C7.87789 26.6388 3.42582 25.0885 -0.12535 22.1969L26.8154 -10.8885C22.6094 -14.3133 17.3358 -16.1499 11.9168 -16.0819L12.4523 26.5814ZM-0.12535 22.1969C-3.67703 19.3048 -6.10228 15.2541 -6.97139 10.7502L34.9224 2.66593C33.8934 -2.66646 31.0218 -7.4633 26.8154 -10.8885L-0.12535 22.1969ZM-7.05884 10.2673C-7.53471 7.45495 -7.39053 4.57276 -6.63657 1.82222L34.5122 13.1017C35.4007 9.86001 35.5707 6.46329 35.0098 3.14892L-7.05884 10.2673ZM-6.63657 1.82222C-5.88263 -0.928232 -4.53744 -3.47966 -2.69623 -5.6545L29.8678 21.9141C32.0382 19.3505 33.6236 16.3432 34.5122 13.1017L-6.63657 1.82222ZM-2.69623 -5.6545C-0.855097 -7.82924 1.43746 -9.57486 4.02053 -10.771L21.9493 27.9459C24.9949 26.5356 27.6975 24.4777 29.8678 21.9141L-2.69623 -5.6545ZM4.02053 -10.771C6.60353 -11.9671 9.41566 -12.5854 12.261 -12.5836L12.2331 30.0831C15.5881 30.0853 18.9039 29.3562 21.9493 27.9459L4.02053 -10.771ZM12.247 -12.5836H10.2546V30.0831H12.247V-12.5836ZM-8.37835 -1.63887L-10.7994 2.70346L26.4666 23.4807L28.8876 19.1384L-8.37835 -1.63887ZM-10.8614 2.81541C-9.16986 -0.261704 -6.68336 -2.82535 -3.66431 -4.60966L18.0444 32.1215C21.6038 30.0178 24.5348 26.9956 26.5285 23.3688L-10.8614 2.81541ZM-3.66431 -4.60966C-0.645415 -6.39388 2.79613 -7.33403 6.30057 -7.33358L6.29507 35.3331C10.4273 35.3336 14.4852 34.225 18.0444 32.1215L-3.66431 -4.60966Z" fill="#6D8CAC" mask="url(#path-1-inside-1_1123_3974)"/>
+                </svg>
+              </span>
+              <p>Авиационные теплообменники</p>
+              <span class="aside-count">
+                (16)
+              </span>
+            </li>
+            <li class="">
+              <span class="aside-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.11266 13.7125L6.2877 12.8875L11.2374 7.93779L6.70018 7.93779V6.76634H13.2338V13.3L12.0624 13.3L12.0624 8.76274L7.11266 13.7125Z" fill="#FCFCFC" stroke="#FCFCFC" stroke-width="0.5"/>
+                </svg>
+              </span>
+              <p>Паяные пластинчатые теплообменники</p>
+              <span class="aside-count">
+                (16)
+              </span>
+            </li>
+            <li class="">
+              <span class="aside-icon">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.00088 7.88992C5.48556 7.88992 4.99134 7.69079 4.62695 7.33635C4.26256 6.9819 4.05785 6.50117 4.05785 5.9999C4.05785 5.49864 4.26256 5.01791 4.62695 4.66346C4.99134 4.30901 5.48556 4.10989 6.00088 4.10989C6.51621 4.10989 7.01043 4.30901 7.37482 4.66346C7.73921 5.01791 7.94392 5.49864 7.94392 5.9999C7.94392 6.50117 7.73921 6.9819 7.37482 7.33635C7.01043 7.69079 6.51621 7.88992 6.00088 7.88992ZM10.1257 6.52371C10.1479 6.35091 10.1645 6.1781 10.1645 5.9999C10.1645 5.8217 10.1479 5.6435 10.1257 5.4599L11.2971 4.57969C11.4025 4.49869 11.4303 4.35289 11.3637 4.23409L10.2534 2.36567C10.1867 2.24687 10.0368 2.19827 9.91472 2.24687L8.53238 2.78687C8.2437 2.57627 7.94392 2.39267 7.59417 2.25767L7.38877 0.826657C7.37749 0.763053 7.34343 0.705386 7.29262 0.663873C7.24182 0.62236 7.17754 0.599681 7.11119 0.599855H4.89058C4.75179 0.599855 4.63521 0.697055 4.613 0.826657L4.40759 2.25767C4.05785 2.39267 3.75806 2.57627 3.46938 2.78687L2.08705 2.24687C1.96492 2.19827 1.81502 2.24687 1.74841 2.36567L0.638099 4.23409C0.565929 4.35289 0.599238 4.49869 0.704718 4.57969L1.87609 5.4599C1.85389 5.6435 1.83723 5.8217 1.83723 5.9999C1.83723 6.1781 1.85389 6.35091 1.87609 6.52371L0.704718 7.42011C0.599238 7.50112 0.565929 7.64692 0.638099 7.76572L1.74841 9.63413C1.81502 9.75294 1.96492 9.79614 2.08705 9.75294L3.46938 9.20753C3.75806 9.42353 4.05785 9.60713 4.40759 9.74214L4.613 11.1731C4.63521 11.3027 4.75179 11.4 4.89058 11.4H7.11119C7.24998 11.4 7.36656 11.3027 7.38877 11.1731L7.59417 9.74214C7.94392 9.60173 8.2437 9.42353 8.53238 9.20753L9.91472 9.75294C10.0368 9.79614 10.1867 9.75294 10.2534 9.63413L11.3637 7.76572C11.4303 7.64692 11.4025 7.50112 11.2971 7.42011L10.1257 6.52371Z" fill="#F2F5F7"/>
+                </svg>
+              </span>
+             <p>Центр мехобработки</p>
+              <span class="aside-count">
+                (16)
+              </span>
+            </li>
+            <li class="">
+              <span class="aside-icon">
+               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.18807 1.84449C9.12654 1.72438 9.05769 1.5984 8.98152 1.46656L7.25006 3.19802L6.80181 2.74978L8.53327 1.01832C8.39851 0.936283 8.27253 0.86597 8.15534 0.807376C8.03815 0.748782 7.91657 0.694582 7.79059 0.644777C7.66461 0.594972 7.53571 0.55835 7.40387 0.534912C7.27203 0.511475 7.12701 0.499756 6.96881 0.499756C6.73443 0.502686 6.51031 0.533448 6.29644 0.592042C6.08257 0.650636 5.88188 0.735598 5.69438 0.846927C5.50688 0.958256 5.33549 1.09009 5.18022 1.24244C5.02494 1.39478 4.89164 1.56617 4.78031 1.7566C4.66898 1.94703 4.58402 2.14918 4.52543 2.36305C4.46683 2.57692 4.43754 2.79958 4.43754 3.03103C4.43754 3.10134 4.44046 3.17019 4.44632 3.23757C4.45218 3.30496 4.46097 3.37234 4.47269 3.43972L0.930668 6.98175C0.790042 7.1253 0.683107 7.28644 0.609864 7.46515C0.536621 7.64386 0.5 7.83136 0.5 8.02766C0.5 8.22981 0.539551 8.42024 0.618653 8.59895C0.697756 8.77766 0.803225 8.9344 0.935062 9.06917C1.0669 9.20394 1.22217 9.30941 1.40089 9.38558C1.5796 9.46175 1.77003 9.49984 1.97218 9.49984C2.1714 9.49984 2.36037 9.46321 2.53908 9.38997C2.71779 9.31673 2.87746 9.20979 3.01809 9.06917L6.56011 5.52714C6.63043 5.53886 6.69927 5.54765 6.76666 5.55351C6.83404 5.55937 6.90142 5.5623 6.96881 5.5623C7.20319 5.55937 7.42731 5.52861 7.64118 5.47002C7.85505 5.41142 8.05573 5.32646 8.24323 5.21513C8.43074 5.1038 8.60212 4.97196 8.7574 4.81962C8.91267 4.66727 9.04597 4.49589 9.1573 4.30545C9.26863 4.11502 9.35359 3.91287 9.41219 3.699C9.47078 3.48513 9.50008 3.26248 9.50008 3.03103C9.49422 2.86989 9.48104 2.72341 9.46053 2.59157C9.44002 2.45973 9.40486 2.33229 9.35506 2.20924C9.30525 2.0862 9.24959 1.96461 9.18807 1.84449Z" fill="#F2F5F7"/>
+                </svg>
+              </span>
+              <p> Ремонт и постпродажное обслуживание АТ</p>
+
+              <span class="aside-count">
+                (16)
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-9 catalog-list d-flex flex-wrap justify-content-end">
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <a class="swiper-slide" href="images/catalog/product-big.png" data-fancybox="gallery">
+                  <img  src="images/catalog/product1.png" alt="">
+                </a>
+                <a class="swiper-slide" href="images/catalog/product-big.png" data-fancybox="gallery">
+                  <img  src="images/catalog/product1.png" alt="">
+                </a>
+                <a class="swiper-slide" href="images/catalog/product-big.png" data-fancybox="gallery">
+                  <img  src="images/catalog/product1.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-img swiper-slider swiper position-relative">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+                <img  class="swiper-slide" src="images/catalog/product1.png" alt="">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h4>Вентилятор 7516</h4>
+            <p>Приборы контроля пневматические показывающие и регистрирующие.</p>
+          </div>
+          <nav aria-label="Page navigation example" class="w-100">
+            <ul class="pagination ">
+              <li class="page-item disabled">
+                <a class="page-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M13 16L7 10L13 4" stroke="#6D8CAC" stroke-width="1.5"/>
+                </svg></a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link bg-transparent" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7 4L13 10L7 16" stroke="#6D8CAC" stroke-width="1.5"/>
+                </svg></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="#" class="footer-logo">
+            <img src="images/logo-white.svg" alt="">
+          </a>
+        </div>
+        <div class="col">
+          <h5 class="sub-title dark text-uppercase"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7239 10.9375C17.1723 10.9375 17.394 10.3927 17.073 10.0796L9.96189 3.14186C9.76767 2.95238 9.45778 2.95239 9.26356 3.14187L2.15272 10.0796C1.83175 10.3927 2.05346 10.9375 2.50189 10.9375H3.18554C3.46168 10.9375 3.68554 11.1613 3.68554 11.4375V16.3761C3.68554 16.6523 3.90939 16.8761 4.18554 16.8761H6.64748H7.62845C7.90459 16.8761 8.12845 16.6523 8.12845 16.3761V13.1208C8.12845 12.8447 8.35231 12.6208 8.62845 12.6208H10.5904C10.8665 12.6208 11.0904 12.8447 11.0904 13.1208V16.3761C11.0904 16.6523 11.3142 16.8761 11.5904 16.8761H12.5714H15.0333C15.3094 16.8761 15.5333 16.6523 15.5333 16.3761V11.4375C15.5333 11.1613 15.7572 10.9375 16.0333 10.9375H16.7239Z" fill="#F2F5F7" fill-opacity="0.7"/>
+          </svg>
+            Адрес</h5>
+          <div class="footer-address">
+            <h2>Москва</h2>
+            <p>Петровско-Разумовский проезд 19/1</p>
+          </div>
+          <div class="footer-address">
+            <h2>Кимры</h2>
+            <p>ул. Кленовая, 39</p>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="sub-title dark text-uppercase"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5079 4.28589C17.7866 4.28589 17.9147 4.63278 17.7029 4.8139L10.1996 11.2295C10.0873 11.3254 9.9219 11.3254 9.80965 11.2295L2.30634 4.8139C2.09451 4.63278 2.2226 4.28589 2.5013 4.28589H17.5079ZM9.80756 12.3814C9.9183 12.4725 10.078 12.4725 10.1888 12.3814L17.5094 6.35878C17.7051 6.19775 18 6.33699 18 6.59046V15.4146C18 15.5803 17.8657 15.7146 17.7 15.7146H2.3C2.13431 15.7146 2 15.5803 2 15.4146V6.59349C2 6.34002 2.29486 6.20078 2.4906 6.36181L9.80756 12.3814Z" fill="#F2F5F7" fill-opacity="0.7"/>
+          </svg>
+            Почта</h5>
+          <div class="footer-address">
+            <h2>hsn@hs-nauka.ru</h2>
+          </div>
+          <h5 class="sub-title dark text-uppercase"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.7953 13.8979C16.8412 13.9697 16.9056 14.0946 16.9331 14.1756C16.9928 14.3421 17.0181 14.6035 16.9859 14.7539C16.94 14.9737 16.7769 15.2489 16.3359 15.8458C16.0694 16.2044 15.5916 16.6971 15.3987 16.8128C14.9416 17.0811 14.5534 17.0649 13.6599 16.7388C12.1277 16.1789 10.6508 15.36 9.22661 14.2843C6.50001 12.2254 4.51541 9.63212 3.18543 6.38418C3.01545 5.97008 2.98789 5.8359 3.00396 5.51204C3.02235 5.11877 3.14406 4.82036 3.46105 4.39934C3.8125 3.93435 4.63486 3.26811 5.07356 3.09692C5.48936 2.93495 5.86603 2.97662 6.16005 3.21718C6.32316 3.35371 7.1409 4.36233 7.46938 4.83424C7.71745 5.1928 8.0597 5.748 8.19064 6.00248C8.36063 6.3379 8.39047 6.67102 8.28022 6.99722C8.19293 7.25401 8.11714 7.3396 7.64852 7.71434C7.40966 7.90867 7.19373 8.08682 7.17304 8.10992C7.15239 8.1354 7.10645 8.21635 7.07198 8.29268C6.93188 8.59574 7.01687 9.00985 7.35222 9.68765C7.61181 10.2151 7.94025 10.6824 8.42265 11.2122C8.83154 11.6633 9.36442 12.119 9.78018 12.3734C10.3154 12.7019 11.0114 12.9518 11.395 12.9541C11.5604 12.9541 11.7947 12.887 11.9141 12.8037C11.9624 12.7714 12.1438 12.5655 12.3207 12.3457C12.7594 11.7974 12.8973 11.6748 13.1591 11.6008C13.4026 11.5291 13.7311 11.6054 14.1744 11.8344C14.9508 12.2346 16.5059 13.4584 16.7953 13.8979Z" fill="#F2F5F7" fill-opacity="0.7"/>
+          </svg>
+            телефон</h5>
+          <div class="footer-address">
+            <h2>+7 (495) 755-77-00</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="row">
+        <div class="col">
+          <h4>О нас</h4>
+          <ul class="footer-menu">
+            <li><a href="">О компании</a></li>
+            <li><a href="">Контакты</a></li>
+            <li><a href="">Наши клиенты</a></li>
+            <li><a href="">Лицензии и сертификаты</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>технологии</h4>
+          <ul class="footer-menu">
+            <li><a href="">Производство комплектующих</a></li>
+            <li><a href="">Термообработка</a></li>
+            <li><a href="">Сборка</a></li>
+            <li><a href="">Сборка и сварка сборочных изделий</a></li>
+            <li><a href="">Механическая обработка</a></li>
+            <li><a href="">Контроль и испытание продукции</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Продукция</h4>
+          <ul class="footer-menu">
+            <li><a href="">Авиационные теплообменники</a></li>
+            <li><a href="">Паяные пластинчатые теплообменники</a></li>
+            <li><a href="">Центр мехобработки</a></li>
+            <li><a href="">Ремонт и постпродажное обслуживание АТ</a></li>
+          </ul>
+          <a href="" class="btn btn-secondary">связаться с нами <span class="btn-arrow"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 align-items-center d-flex">
+          <p>Copyright © 2024 АО «ХC-Наука»</p>
+        </div>
+        <div class="col-4">
+          <a href="" class="blue">Политика конфиденциальности</a>
+        </div>
+        <div class="col-4 justify-content-end d-flex">
+          <a href="" class="light-blue ">Разработка сайта <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.50088 16.5L7.50089 15.5L13.5009 9.50008L8.00089 9.50008L8.00089 8.08009H15.9208V16L14.5008 16V10.5001L8.50088 16.5Z" fill="#0070BB" stroke="#0070BB" stroke-width="0.5"/>
+          </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

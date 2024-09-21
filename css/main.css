@@ -908,4 +908,509 @@ footer{
 }
 .history{
     background: #0070BB;
+    padding: 120px;
+    position: relative;
+}
+.history:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('../images/about/section1.svg') no-repeat left top;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.history-list{
+    gap: 20px;
+}
+.history-item{
+    max-width: 590px;
+    border: 1px solid #9DB9CC;
+    background: #0070BB;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+}
+.history-item h4{
+    font-size: 38px;
+    line-height: 38px;
+    color: #F2F5F7;
+    font-weight: 500;
+    font-family: "DIN Next W1G", sans-serif;
+    margin-bottom: 20px;
+    padding-right: 110px;
+}
+.history-item p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #F2F5F7;
+    font-weight: 400;
+    margin-bottom: 27px;
+    padding-right: 110px;
+}
+.map-icon{
+    width: 20px;
+    height: 20px;
+    background: url('../images/icons/map-white.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.history-item p:nth-child(3){
+    width: fit-content;
+    padding: 0;
+    margin-left: auto;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 0;
+}
+.about-fly{
+    padding: 120px;
+
+}
+.fly-info{
+    padding: 0;
+}
+.fly-info h4{
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 500;
+    font-family: "DIN Next W1G", sans-serif;
+    max-width: 444px;
+}
+.fly-info p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    max-width: 444px;
+}
+.fly-item{
+    width: 222px;
+}
+
+.fly-item-img{
+    background: #6D8CAC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 100px;
+}
+.fly-list{
+    gap: 13px;
+}
+.fly-col{
+    padding: 0;
+}
+.fly-item p{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.fly-item-img p{
+    margin-bottom: 0;
+    color: #F2F5F7;
+    font-weight: 400;
+}
+.company{
+    padding: 120px;
+    background: #0C3F75;
+    position: relative;
+}
+.company:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/about/section3.svg') no-repeat left center;
+    z-index: 0;
+}
+.company h4{
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 500;
+    font-family: "DIN Next W1G", sans-serif;
+    z-index: 1;
+    position: relative;
+    color: #F2F5F7;
+ 
+}
+.company p{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #F2F5F7;
+    z-index: 1;
+    position: relative;
+}
+.history-2{
+    background: #0C3F75;
+    padding: 120px;
+}
+.history-2 .container{
+    background: #F2F5F7;
+    padding: 70px;
+}
+.history-2 h4{
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-family: "DIN Next W1G", sans-serif;
+    font-weight: 500;
+}
+.history-2 p{
+    line-height: 19px;
+}
+.history-date{
+    padding: 120px;
+
+}
+.history-date-item{
+    max-width: 590px;
+    background: #F2F5F7;
+    padding: 40px;
+}
+.history-date-item h4{
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 500;
+    font-family: "DIN Next W1G", sans-serif;
+    z-index: 1;
+    position: relative;
+}
+.history-date-item p{
+    padding-right: 110px;
+    line-height: 19px;
+}
+.technologies{
+    padding: 64px 120px 120px;
+}
+.technologies .section-title{
+    margin-bottom: 60px;
+}
+.technologies-item{
+    max-width: 285px;
+    height: 180px;
+    background: #F2F5F7;
+    padding: 20px;
+}
+.technologies-list{
+    gap: 20px;
+    justify-content: space-between;
+}
+.technologies-item:nth-child(2){
+    margin-right: 50px;
+    position: relative;
+    z-index: 1;
+}
+.technologies-item:nth-child(2):before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../images/technologies/tech1.svg') no-repeat right bottom ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+.technologies-item:nth-child(3){
+    margin-left: auto;
+    position: relative;
+    z-index: 1;
+}
+.technologies-item:nth-child(3) h4{
+    padding-right: 30px;
+}
+.technologies-item:nth-child(3):before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../images/technologies/tech2.svg') no-repeat right bottom ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+
+.technologies-item:nth-child(5){
+    margin-left: auto;
+    position: relative;
+}
+.technologies-item:nth-child(5) h4{
+    padding-right: 50px;
+}
+.technologies-item:nth-child(5):before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../images/technologies/tech3.svg') no-repeat right bottom ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+.technologies-item span{
+    color: #6D8CAC;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 23px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.technologies-item h4{
+    font-size: 28px;
+    color: #0C3F75;
+    line-height: 30px;
+    font-family: "DIN Next W1G", sans-serif;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+.product-type{
+    list-style: none;
+    padding: 0;
+}
+.section-subtitle{
+    max-width: 574px;
+    line-height: 19px;
+    margin-top: 40px!important;
+    margin-bottom: 40px!important;
+}
+
+.product-type{
+    max-width: 285px;
+    gap: 5px;
+
+}
+.product-type li{
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #6D8CAC;
+    border-radius: 1px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.product-type li p{
+    font-size: 20px;
+    line-height: 22px;
+    font-family: "DIN Next W1G", sans-serif;
+    width: calc(100% - 70px);
+    margin-bottom: 0;
+    color: #6D8CAC;
+}
+.product-type li.active, .product-type li:hover{
+    background: #6D8CAC;
+    color: #F2F5F7;
+}
+.product-type li.active p, .product-type li:hover p{
+    color: #F2F5F7;
+
+}
+.product-type li .aside-count{
+    opacity: 0.6;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+.aside-icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    background:  #6D8CAC;;
+}
+.product-type li.active .aside-icon, .product-type li:hover .aside-icon{
+    background: #F2F5F7;
+}
+.product-type li.active .aside-icon path , .product-type li:hover .aside-icon path{
+    fill: #6D8CAC;
+}
+.catalog{
+    padding-right: 120px;
+    padding-left: 120px;
+}
+.catalog-item{
+    max-width: 285px;
+    margin-bottom: 60px;
+}
+.catalog-item img{
+    max-width: 100%;
+}
+.catalog-img{
+    background: #F2F5F7;
+    padding: 40px 50px 59px;
+}
+.catalog-list{
+    gap: 20px;
+    width: calc(100% - 285px);
+    padding: 0;
+}
+.catalog-aside{
+    padding: 0;
+    max-width: 285px;
+}
+.catalog-item h4{
+    color: #0070BB;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 22px;
+    font-family: "DIN Next W1G", sans-serif;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.catalog-item p{
+    color: #0C3F75;
+    line-height: 16px;
+    font-size: 14px;
+}
+.contact-page{
+    padding: 64px 120px 120px;
+}
+.contact-page .section-title{
+    margin-bottom: 60px;
+}
+.contact-page .sub-title{
+    border: 1px solid #0C3F7533;
+    gap: 5px;
+    background: transparent;
+    align-items: center;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px ;
+    margin-bottom: 15px;
+}
+.contact-page h4{
+    font-family: "DIN Next W1G", sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.contact-page p{
+    letter-spacing: -1px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.contact-page iframe{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.license{
+    padding: 0 120px;
+}
+.license .section-title{
+    margin-top: 64px;
+}
+.license h4{
+    font-size: 28px;
+    line-height: 30px;
+    font-family: "DIN Next W1G", sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+.license p{
+    line-height: 19px;
+}
+.license-info{
+    padding:0 120px;
+    position: relative;
+}
+.license-info .container:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url('../images/license/license-bg.svg') no-repeat right bottom;
+}
+.license-info:nth-child(4) .container:after{
+
+    background: url('../images/license/license-bg-2.svg') no-repeat right bottom;
+}
+.license-info .container:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url('../images/license/license-bg-top.svg') no-repeat ;
+    background-position: 0 42px ;
+}
+.license-info .row{
+    z-index: 9;
+    position: relative;
+}
+.license-info .container{
+    padding: 90px;
+    background: linear-gradient(272.01deg, #005E9C -6.12%, #0070BB 75.26%);
+    position: relative;
+
+}
+.license-info h4{
+    color: #FCFCFC;
+    font-size: 20px;
+    line-height: 22px;
+    font-family: "DIN Next W1G", sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.license-info h2{
+    color: #FCFCFC;
+    font-size: 38px;
+    line-height: 38px;
+    font-family: "DIN Next W1G", sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.license-info p{
+    color: #FCFCFC;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.license-list{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    gap: 40px 0;
+}
+.license-item h4{
+    font-family: "DIN Next W1G", sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    color: #0C3F75;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.license-item p{
+    font-size: 14px;
+    color: #0C3F75;
+    line-height: 16px;
+}
+
+.license .pagination{
+    margin-bottom: 80px;
 }
