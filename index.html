@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet"  href="css/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 <header>
@@ -29,12 +31,20 @@
         <div class="container-fluid ">
             <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                меню <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">продукция</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle d-flex production" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            продукция
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">авиационные теплообменники</a></li>
+                            <li><a class="dropdown-item" href="#">ППТО</a></li>
+                            <li><a class="dropdown-item" href="#">Центр мехобработки</a></li>
+                            <li><a class="dropdown-item" href="#">Ремонт и постпродажное <br>обслуживание АТ</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,17 +63,25 @@
                             Технологические процессы
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">о компании</a></li>
-                            <li><a class="dropdown-item" href="#">о компании</a></li>
+                            <li><a class="dropdown-item" href="#">Слесарно сварочная работы</a></li>
+                            <li><a class="dropdown-item" href="#">Термообработка</a></li>
+                            <li><a class="dropdown-item" href="#">Электро-эрозионная резка</a></li>
+                            <li><a class="dropdown-item" href="#">Участок испытаний</a></li>
+                            <li><a class="dropdown-item" href="#">Вакуумная пайка</a></li>
+                            <li><a class="dropdown-item" href="#">Мехобработка</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " >Контакты</a>
                     </li>
                 </ul>
-                <div class="contact-us">
-                    <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
-                </div>
+
+            </div>
+            <div class="lang d-none">
+                <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+            </div>
+            <div class="contact-us">
+                <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
             </div>
         </div>
     </nav>

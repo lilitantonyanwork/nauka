@@ -1,0 +1,79 @@
+@media screen and (max-width: 1300px){
+    .navbar-brand{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .navbar-brand{
+        margin-right: 20px;
+    }
+    .navbar-nav{
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .navbar-brand{
+        margin-right: 10px;
+    }
+    .navbar-nav{
+        gap: 5px;
+    }
+    .production{
+        padding: 12px 6px !important;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+}
+@media  screen and (max-width: 990px) {
+    .navbar-toggler{
+        font-size: 14px;
+        color: #0070BB;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: #F2F5F7;
+        align-items: center;
+        gap: 5px;
+        padding: 13px 19px;
+        order: 2;
+        height: 40px;
+    }
+    .navbar-toggler-icon{
+        background: url('../images/icons/menu.svg');
+    }
+    nav .contact-us{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .top-bar{
+        display: none!important;
+    }
+    .lang{
+        display: flex!important;
+        margin-left: auto;
+    }
+    .navbar>.container-fluid{
+        justify-content: flex-start;
+    }
+    .banner h1{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .banner img{
+        height: 654px;
+    }
+    .about-info{
+        margin-left: 40px;
+    }
+    .about .container{
+        max-width: 100%;
+    }
+    .section-title{
+        font-size: 38px;
+        line-height: 41px;
+    }
+    .about-mission{
+        max-width: 100%;
+        margin-bottom: 100px;
+    }
+}
