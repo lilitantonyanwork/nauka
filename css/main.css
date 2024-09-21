@@ -1414,3 +1414,100 @@ footer{
 .license .pagination{
     margin-bottom: 80px;
 }
+
+.carousel-bottom-clip:after{
+    content: '';
+    width:48px;
+    height: 67px;
+    clip-path: polygon(10.7234px 56.6544px, 0px 67px, 48px 67px, 48px 0px, 10.7234px 35.9632px, 10.7234px 56.6544px);
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.carousel-bottom-clip:before{
+    content: '';
+    width:293px;
+    height: 47px;
+    clip-path: polygon(33.623px 32.1579px, 0px 0px, 0px 47px, 293px 47px, 277.482px 32.1579px, 33.623px 32.1579px);
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.carousel-top-clip:after{
+    content: '';
+    width:67px;
+    height: 48px;
+    clip-path: polygon(56.6544px 37.2766px, 67px 48px, 67px 0px, 0px 0px, 35.9632px 37.2766px, 56.6544px 37.2766px);
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.carousel-top-clip:before{
+    content: '';
+    width:67px;
+    height: 48px;
+    clip-path: polygon(10.3456px 37.2766px, 0px 48px, 0px 0px, 67px 0px, 31.0368px 37.2766px, 10.3456px 37.2766px);
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.why-clip-path-top, .why-clip-path-bottom{
+    left: 0;
+}
+.why-clip-path-top:after{
+    content: '';
+    width:66px;
+    height: 66px;
+    clip-path: polygon(66px 0px, 66px 66px, 0px 66px, 66px 0px);
+    background-color: #0A1E30;
+    position: absolute;
+    right: 0;
+    top: -66px;
+    z-index: -1;
+}
+.why-clip-path-top:before{
+    content: '';
+    width:397px;
+    height: 67px;
+    clip-path: polygon(45.5574px 45.8421px, 0px 0px, 0px 67px, 397px 67px, 375.974px 45.8421px, 45.5574px 45.8421px);
+    background-color: #0A1E30;
+    position: absolute;
+    left: 0;
+    top:-67px;
+}
+.why-clip-path-bottom:after{
+    content: '';
+    width:397px;
+    height: 67px;
+    clip-path: polygon(351.443px 45.8421px, 397px 0px, 397px 67px, 0px 67px, 21.0265px 45.8421px, 351.443px 45.8421px);
+    background-color: #0070BB;
+    position: absolute;
+    right: 0;
+    top: -66px;
+}
+.why-clip-path-bottom:before{
+    content: '';
+    width:127px;
+    height: 67px;
+    clip-path: polygon(45.5574px 21.1579px, 0px 67px, 0px 0px, 127px 0px, 105.974px 21.1579px, 45.5574px 21.1579px);
+    background: #0A1E30;
+    position: absolute;
+    left: 0;
+    bottom:-67px;
+    z-index: 9;
+}
+.products-clip-path-bottom:after{
+    content: '';
+    width:257px;
+    height: 67px;
+    clip-path: polygon(211.443px 21.1579px, 257px 67px, 257px 0px, 0px 0px, 21.0265px 21.1579px, 211.443px 21.1579px);
+    background-color: #0070BB;
+    position: absolute;
+    right: 0;
+    bottom: -67px;
+    z-index: 9;
+}
