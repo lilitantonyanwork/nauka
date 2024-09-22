@@ -458,6 +458,8 @@ body{
     font-weight: 600;
     display: flex;
     align-items: center;
+    text-decoration: underline!important;
+    padding-bottom: 2px;
 }
 .review-btn .btn-arrow{
     margin-left: 10px;
@@ -478,6 +480,8 @@ body{
 .footer-top{
     background: #0A1E30;
     padding: 57px 0 70px;
+    z-index: 9;
+    position: relative;
 }
 .page-404{
     padding: 164px 0;
@@ -1121,6 +1125,17 @@ footer{
     height: 180px;
     background: #F2F5F7;
     padding: 20px;
+    position: relative;
+}
+.technologies-item:after{
+    content: '';
+    width:48px;
+    height: 67px;
+    clip-path: polygon(10.7234px 10.3456px, 0px 0px, 48px 0px, 48px 67px, 10.7234px 31.0368px, 10.7234px 10.3456px);
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .technologies-list{
     gap: 20px;
@@ -1559,7 +1574,7 @@ footer{
     right: 0;
     top: 0;
 }
-.contact .row:first-child:before{
+.contact > .row:first-child:before{
     content: '';
     width:57px;
     height: 57px;
@@ -1643,4 +1658,10 @@ footer:after{
 }
 .img-banner img{
     max-width: 100%;
+}
+.footer-bottom .col:not(:first-child){
+    border-bottom: 0;
+}
+#sidebar{
+    display: none;
 }
