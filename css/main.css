@@ -1799,6 +1799,10 @@ footer:after{
 }
 .modal-contact .modal-dialog{
     padding: 60px 40px;
+    max-height: 528px;
+    min-height: auto;
+    top: 45%;
+    transform: translateY(-50%);
 }
 .modal-contact .modal-header .modal-title{
         font-size: 46px;
