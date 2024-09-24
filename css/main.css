@@ -1802,7 +1802,7 @@ footer:after{
     max-height: 528px;
     min-height: auto;
     top: 45%;
-    transform: translateY(-50%);
+    transform: translateY(-50%)!important;
 }
 .modal-contact .modal-header .modal-title{
         font-size: 46px;
