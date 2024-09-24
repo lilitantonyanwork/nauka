@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet"  href="css/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 <header>
@@ -29,12 +31,20 @@
     <div class="container-fluid ">
       <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        меню <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">продукция</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle d-flex production" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              продукция
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">авиационные теплообменники</a></li>
+              <li><a class="dropdown-item" href="#">ППТО</a></li>
+              <li><a class="dropdown-item" href="#">Центр мехобработки</a></li>
+              <li><a class="dropdown-item" href="#">Ремонт и постпродажное <br>обслуживание АТ</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,17 +63,25 @@
               Технологические процессы
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">о компании</a></li>
-              <li><a class="dropdown-item" href="#">о компании</a></li>
+              <li><a class="dropdown-item" href="#">Слесарно сварочная работы</a></li>
+              <li><a class="dropdown-item" href="#">Термообработка</a></li>
+              <li><a class="dropdown-item" href="#">Электро-эрозионная резка</a></li>
+              <li><a class="dropdown-item" href="#">Участок испытаний</a></li>
+              <li><a class="dropdown-item" href="#">Вакуумная пайка</a></li>
+              <li><a class="dropdown-item" href="#">Мехобработка</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link " >Контакты</a>
           </li>
         </ul>
-        <div class="contact-us">
-          <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
-        </div>
+
+      </div>
+      <div class="lang d-none">
+        <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+      </div>
+      <div class="contact-us">
+        <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
       </div>
     </div>
   </nav>
@@ -103,7 +121,8 @@
     </div>
   </section>
   <section class="license-info">
-    <div class="container">
+    <div class="container position-relative">
+      <div class="license-info-top position-absolute top-0 w-100"></div>
       <div class="row">
         <div class="col-9">
           <h4 class="">Главной целью нашего предприятия в области охраны труда и окружающей среды</h4>
@@ -111,7 +130,9 @@
           <p>Для этого на предприятии созданы и успешно функционируют системы управления промышленной, экологической безопасностью и охраной труда. Они построены в полном соответствии с действующим российским законодательством, международными требованиями, на основе лучшей отечественной и зарубежной практики.</p>
         </div>
       </div>
+      <div class="license-info-bottom position-absolute bottom-0 w-100"></div>
     </div>
+
   </section>
   <section class="license">
     <div class="container">
@@ -140,14 +161,18 @@
     </div>
   </section>
   <section class="license-info">
-    <div class="container">
+    <div class="container position-relative">
+      <div class="license-info-top position-absolute top-0 w-100"></div>
+
       <div class="row">
-        <div class="col-8">
+        <div class="col-9">
           <h2>Стабильность качества нашей продукции</h2>
             <p>обеспечивается системным управлением процессами в рамках системы качества предприятия, построенной в соответствии с требованиями международного стандарта по качеству ISO 9001, международного аэрокосмического стандарта AS 9100, а также действующими в России «Авиационными правилами».</p>
           <p>Весь коллектив предприятия принимает участие в совершенствовании системы качества, испытывая личную гордость и ответственность за обеспечение наших заказчиков продукцией наивысшего качества.</p>
         </div>
       </div>
+      <div class="license-info-bottom position-absolute bottom-0 w-100"></div>
+
     </div>
   </section>
   <section class="license">
@@ -240,7 +265,7 @@
   <div class="footer-top">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col footer-top-logo">
           <a href="#" class="footer-logo">
             <img src="images/logo-white.svg" alt="">
           </a>
@@ -316,13 +341,13 @@
   <div class="copyright">
     <div class="container">
       <div class="row">
-        <div class="col-4 align-items-center d-flex">
+        <div class="col-md-4 align-items-center d-flex">
           <p>Copyright © 2024 АО «ХC-Наука»</p>
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
           <a href="" class="blue">Политика конфиденциальности</a>
         </div>
-        <div class="col-4 justify-content-end d-flex">
+        <div class="col-md-4 justify-content-end d-flex">
           <a href="" class="light-blue ">Разработка сайта <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.50088 16.5L7.50089 15.5L13.5009 9.50008L8.00089 9.50008L8.00089 8.08009H15.9208V16L14.5008 16V10.5001L8.50088 16.5Z" fill="#0070BB" stroke="#0070BB" stroke-width="0.5"/>
           </svg>
@@ -333,6 +358,121 @@
   </div>
 
 </footer>
+<div class="fixed-mobile-menu">
+  <nav class="navbar navbar-light navbar-expand    fixed-bottom d-md-none d-lg-none d-xl-none "
+  >
+    <ul class="nav nav-justified w-100" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">
+                    <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.66667 5.33333C6.66667 6.06971 6.06971 6.66667 5.33333 6.66667C4.59695 6.66667 4 6.06971 4 5.33333C4 4.59695 4.59695 4 5.33333 4C6.06971 4 6.66667 4.59695 6.66667 5.33333Z" fill="#6D8CAC"/>
+<path d="M6.66667 10C6.66667 10.7364 6.06971 11.3333 5.33333 11.3333C4.59695 11.3333 4 10.7364 4 10C4 9.26362 4.59695 8.66667 5.33333 8.66667C6.06971 8.66667 6.66667 9.26362 6.66667 10Z" fill="#6D8CAC"/>
+<path d="M6.66667 14.6667C6.66667 15.403 6.06971 16 5.33333 16C4.59695 16 4 15.403 4 14.6667C4 13.9303 4.59695 13.3333 5.33333 13.3333C6.06971 13.3333 6.66667 13.9303 6.66667 14.6667Z" fill="#6D8CAC"/>
+<path d="M11.3333 5.33333C11.3333 6.06971 10.7364 6.66667 10 6.66667C9.26362 6.66667 8.66667 6.06971 8.66667 5.33333C8.66667 4.59695 9.26362 4 10 4C10.7364 4 11.3333 4.59695 11.3333 5.33333Z" fill="#6D8CAC"/>
+<path d="M11.3333 10C11.3333 10.7364 10.7364 11.3333 10 11.3333C9.26362 11.3333 8.66667 10.7364 8.66667 10C8.66667 9.26362 9.26362 8.66667 10 8.66667C10.7364 8.66667 11.3333 9.26362 11.3333 10Z" fill="#6D8CAC"/>
+<path d="M11.3333 14.6667C11.3333 15.403 10.7364 16 10 16C9.26362 16 8.66667 15.403 8.66667 14.6667C8.66667 13.9303 9.26362 13.3333 10 13.3333C10.7364 13.3333 11.3333 13.9303 11.3333 14.6667Z" fill="#6D8CAC"/>
+<path d="M16 5.33333C16 6.06971 15.403 6.66667 14.6667 6.66667C13.9303 6.66667 13.3333 6.06971 13.3333 5.33333C13.3333 4.59695 13.9303 4 14.6667 4C15.403 4 16 4.59695 16 5.33333Z" fill="#6D8CAC"/>
+<path d="M16 10C16 10.7364 15.403 11.3333 14.6667 11.3333C13.9303 11.3333 13.3333 10.7364 13.3333 10C13.3333 9.26362 13.9303 8.66667 14.6667 8.66667C15.403 8.66667 16 9.26362 16 10Z" fill="#6D8CAC"/>
+<path d="M16 14.6667C16 15.403 15.403 16 14.6667 16C13.9303 16 13.3333 15.403 13.3333 14.6667C13.3333 13.9303 13.9303 13.3333 14.6667 13.3333C15.403 13.3333 16 13.9303 16 14.6667Z" fill="#6D8CAC"/>
+</svg>
+</span>
+          Продукция
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes" type="button"
+                role="tab" aria-controls="intro" aria-selected="true">
+                    <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.6533 6.49414C14.585 6.36068 14.5085 6.2207 14.4238 6.07422L12.5 7.99805L12.002 7.5L13.9258 5.57617C13.776 5.48503 13.6361 5.4069 13.5059 5.3418C13.3757 5.27669 13.2406 5.21647 13.1006 5.16113C12.9606 5.10579 12.8174 5.0651 12.6709 5.03906C12.5244 5.01302 12.3633 5 12.1875 5C11.9271 5.00326 11.6781 5.03743 11.4404 5.10254C11.2028 5.16764 10.9798 5.26204 10.7715 5.38574C10.5632 5.50944 10.3727 5.65592 10.2002 5.8252C10.0277 5.99447 9.87956 6.1849 9.75586 6.39648C9.63216 6.60807 9.53776 6.83268 9.47266 7.07031C9.40755 7.30794 9.375 7.55534 9.375 7.8125C9.375 7.89063 9.37826 7.96712 9.38477 8.04199C9.39128 8.11686 9.40104 8.19173 9.41406 8.2666L5.47852 12.2021C5.32227 12.3617 5.20345 12.5407 5.12207 12.7393C5.04069 12.9378 5 13.1462 5 13.3643C5 13.5889 5.04395 13.8005 5.13184 13.999C5.21973 14.1976 5.33691 14.3717 5.4834 14.5215C5.62988 14.6712 5.80241 14.7884 6.00098 14.873C6.19954 14.9577 6.41113 15 6.63574 15C6.8571 15 7.06706 14.9593 7.26562 14.8779C7.46419 14.7965 7.6416 14.6777 7.79785 14.5215L11.7334 10.5859C11.8115 10.599 11.888 10.6087 11.9629 10.6152C12.0378 10.6217 12.1126 10.625 12.1875 10.625C12.4479 10.6217 12.6969 10.5876 12.9346 10.5225C13.1722 10.4574 13.3952 10.363 13.6035 10.2393C13.8118 10.1156 14.0023 9.96908 14.1748 9.7998C14.3473 9.63053 14.4954 9.4401 14.6191 9.22852C14.7428 9.01693 14.8372 8.79232 14.9023 8.55469C14.9674 8.31706 15 8.06966 15 7.8125C14.9935 7.63346 14.9788 7.4707 14.9561 7.32422C14.9333 7.17773 14.8942 7.03613 14.8389 6.89941C14.7835 6.7627 14.7217 6.6276 14.6533 6.49414Z" fill="#6D8CAC"/>
+</svg></span>
+          Технологии
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">
+                    <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.11266 13.7125L6.2877 12.8875L11.2374 7.93779L6.70018 7.93779V6.76634H13.2338V13.3L12.0624 13.3L12.0624 8.76274L7.11266 13.7125Z" fill="#6D8CAC" stroke="6D8CAC" stroke-width="1"/>
+</svg>
+</span>
+          Связаться
+        </button>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sidebarCollapse" type="button"
+        >
+                    <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.33333 15H16.6667C17.125 15 17.5 14.625 17.5 14.1667C17.5 13.7083 17.125 13.3333 16.6667 13.3333H3.33333C2.875 13.3333 2.5 13.7083 2.5 14.1667C2.5 14.625 2.875 15 3.33333 15ZM3.33333 10.8333H16.6667C17.125 10.8333 17.5 10.4583 17.5 10C17.5 9.54167 17.125 9.16667 16.6667 9.16667H3.33333C2.875 9.16667 2.5 9.54167 2.5 10C2.5 10.4583 2.875 10.8333 3.33333 10.8333ZM2.5 5.83333C2.5 6.29167 2.875 6.66667 3.33333 6.66667H16.6667C17.125 6.66667 17.5 6.29167 17.5 5.83333C17.5 5.375 17.125 5 16.6667 5H3.33333C2.875 5 2.5 5.375 2.5 5.83333Z" fill="#0C3F75"/>
+</svg>
+</span>
+          Меню
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <div class="sidebar-overlay"></div>
+  <nav id="sidebar">
+
+
+
+    <div class="sidebar-header">
+      <a href=""><img src="images/logo-white.svg" alt=""></a>
+    </div>
+
+    <ul class="list-unstyled components">
+      <p>О КОМПАНИИ</p>
+      <li class="active">
+        <ul class=" list-unstyled" id="homeSubmenu">
+          <li>
+            <a href="#">миссия</a>
+          </li>
+          <li>
+            <a href="#">история (планы и цели)</a>
+          </li>
+          <li>
+            <a href="#">лицензии и сертификаты. Сертификация Минпромторга, ФАП-285, бывшие (AS, Nadcap), ОТ и ООС</a>
+          </li>
+          <li>
+            <a href="#">Наши клиенты</a>
+          </li>
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">КОНТАКТЫ</a>
+      </li>
+      <li>
+        <a href="#">БЛОГ</a>
+      </li>
+    </ul>
+    <div class='nav-addresses'>
+      <div class="">
+        <h4>г. Москва</h4>
+        <p>Петровско-Разумовский проезд 19/1</p>
+        <h4>г. Кимры</h4>
+        <p>ул. Кленовая, 39</p>
+      </div>
+      <div class>
+        <h4>hsn@hs-nauka.ru</h4>
+      </div>
+      <div class>
+        <h4>+7 (495) 755-77-00</h4>
+      </div>
+    </div>
+    <div class="contacts d-flex justify-content-between">
+      <div class="lang">
+        <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+      </div>
+      <div class="contact-us">
+        <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
+      </div>
+    </div>
+
+
+  </nav>
+</div>
 
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

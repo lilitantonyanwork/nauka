@@ -1,9 +1,21 @@
+@media screen and (max-width: 1380px){
+    .history-item{
+        width: 590px;
+    }
+    .history-list{
+        align-items: center;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 1300px){
     .navbar-brand{
         margin-right: 50px;
     }
+    .product-type li p{
+        word-break: break-all;
+    }
 }
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1200px){
     .navbar-brand{
         margin-right: 20px;
     }
@@ -26,8 +38,24 @@
     .technologies-item:nth-child(5){
         margin-left: unset;
     }
+    .company:before{
+        background-size: 38%;
+    }
+    .history-date-item{
+        width: 590px;
+        margin-bottom: 20px;
+    }
 
-
+    .history-date .row{
+        align-items: center;
+        justify-content: center!important;
+    }
+    .why-us p{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 }
 @media screen and (max-width: 1100px){
     .navbar-brand{
@@ -42,9 +70,46 @@
     .nav-link{
         font-size: 12px;
     }
+    .license-item img   {
+        max-width: 100%;
+    }
+    .catalog-block{
+        flex-direction: column;
+    }
+    .catalog-aside{
+        width: 100%;
+        max-width: 100%;
+    }
+    .product-type{
+        flex-direction: row;
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .catalog-list{
+        width: 100%;
+        justify-content: center!important;
+    }
+    .catalog-item{
+        max-width: 334px;
+        margin-bottom: 20px;
+    }
 
+
+    .product-type li{
+        width: 45%;
+        height: 64px;
+    }
+    .product-type li p {
+        word-break: auto-phrase;
+    }
 }
 @media  screen and (max-width: 990px) {
+    .why-us p{
+        display: block;
+    }
     .navbar-toggler{
         font-size: 14px;
         color: #0070BB;
@@ -269,6 +334,7 @@
     }
     .img-banner img:last-child{
         display: block!important;
+        width: 100%;
     }
     .about-info{
         margin-left: 0;
@@ -290,8 +356,791 @@
     .fixed-bottom{
         display: none;
     }
+    .page-404{
+        padding: 203px 0;
+    }
+    .page-404 h1{
+        margin-bottom: 40px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .page-404 p{
+        margin-bottom: 40px;
+    }
+    .page-404 .btn{
+        margin-right: 44px;
+    }
+    .privacy .container{
+        max-width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .privacy .col-8{
+        flex: 1;
+    }
+
+    .contact-page{
+        padding: 47px 40px 100px;
+    }
+    .contact-page .container{
+        max-width: 100%;
+    }
+    .contact-page h4{
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 5px;
+    }
+    .contact-page .col-4{
+        width: 50%;
+    }
+    .mob-fw{
+        flex: 1 0 100%;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact-page iframe{
+        height: 290px;
+    }
+    .license{
+        padding: 0 40px;
+    }
+    .license .section-title{
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .license h4{
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .license p{
+        width: 100%!important;
+        margin-bottom: 50px;
+    }
+    .license .col-3{
+        width: 50%;
+    }
+    .license-list{
+        gap: 20px 0;
+    }
+    .license-item p{
+        margin-bottom: 0;
+    }
+    .license-item h4{
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .license-info .container{
+        padding: 60px 40px 115px;
+        max-width: 100%;
+    }
+    .license-info{
+        padding: 0 40px;
+    }
+    .license-info .container:before{
+        background-position: 0 27px;
+        background-size: 100%;
+    }
+    .license-info .container:after, .license-info:nth-child(4) .container:after{
+        background-size: 281px;
+    }
+    .license .pagination{
+        justify-content: flex-start!important;
+    }
+    .license-info .col-9{
+        width: 100%;
+        padding-right: 99px;
+    }
+    .license-info h4{
+        padding-right: 123px;
+    }
+    .license-info h2{
+        letter-spacing: -1px;
+    }
+    .license-info p{
+        padding-right: 40px;
+    }
+    .clients-page{
+        padding: 60px 40px 100px;
+    }
+    .clients-page .client{
+        width: 219px;
+        padding: 30px;
+    }
+
+    .clients-page .client img{
+        max-width: 100%;
+    }
+    .clients-page .client{
+        height: 100px;
+    }
+    .clients-page{
+        margin-top: 30px;
+    }
+    .clients-page .container{
+        max-width: 100%;
+        padding: 0!important;
+    }
+    .clients-page .clients-list {
+        gap: 16px 12px;
+    }
+    .post-content img{
+        max-width: 100%;
+    }
+    .post{
+        padding: 40px 0 100px;
+    }
+
+    .back-to{
+        margin-bottom: 40px;
+    }
+    .post .col-9{
+        width: 100%;
+        padding: 0;
+    }
+    .post-content{
+        padding: 50px 29px;
+    }
+    .post .container{
+        max-width: calc(100% - 30px);
+    }
+    .post-content h4{
+        font-size: 32px;
+        line-height: 32px;
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+    .blog{
+        padding: 60px 40px 0;
+    }
+    .post-list{
+        margin-top: 30px;
+        padding: 0;
+    }
+    .post-list .card{
+        max-width: 334px;
+    }
+    .modal-dialog{
+        margin-top: 40px;
+        padding: 20px;
+    }
+    .modal .btn-close{
+        top: -25px;
+        right: -13px;
+    }
+    .history{
+        padding: 100px 83px;
+    }
+    .history .section-title.dark{
+        margin-bottom: 50px;
+    }
+    .history:before{
+        background-size: 100%;
+    }
+    .about-fly{
+        padding: 100px 40px;
+    }
+    .fly-info{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .fly-col{
+        width: 100%;
+    }
+    .fly-info p{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .fly-info h4{
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .history-bottom:before{
+        width:603px;
+        height: 47px;
+        clip-path: polygon(33.623px 32.1579px, 0px 0px, 0px 47px, 603px 47px, 587.482px 32.1579px, 33.623px 32.1579px);
+    }
+    .history-bottom:after{
+        display: none;
+    }
+    .fly-list{
+        gap: 10px;
+    }
+    .about-fly:before{
+        width:373px;
+        height: 47px;
+        clip-path: polygon(33.623px 32.1579px, 0px 0px, 0px 47px, 373px 47px, 357.482px 32.1579px, 33.623px 32.1579px);
+    }
+    .about-fly:after{
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        right: 0;
+        width:373px;
+        height: 47px;
+        clip-path: polygon(339.377px 32.1579px, 373px 0px, 373px 47px, 0px 47px, 15.5183px 32.1579px, 339.377px 32.1579px);
+        background-color: #0C3F75;
+    }
+    .company{
+        padding: 100px 40px 400px;
+    }
+    .company .row{
+        flex-direction: column-reverse;
+    }
+    .company .row div{
+        width: 100%;
+    }
+    .company:before{
+        background-size: 80%;
+        background-position: bottom center;
+    }
+    .col-left{
+        width: 100%;
+    }
+    .history-2{
+        padding: 50px 40px;
+    }
+    .history-2 .container{
+        padding: 60px;
+    }
+    .history-2 .col-7{
+        width: 100%;
+    }
+    .history-2 h4{
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+    .history{
+        order: 1;
+    }
+    .about-fly{
+        order: 2;
+    }
+    .company{
+        order: 3;
+    }
+    .history-banner{
+        order: 5;
+    }
+    .history-2{
+        order: 4;
+    }
+    .history-date{
+        order: 6;
+    }
+    .history-banner-top:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:37px;
+        height: 51px;
+        clip-path: polygon(28.734px 7.875px, 37px 0px, 0px 0px, 0px 51px, 28.734px 23.625px, 28.734px 7.875px);
+        background-color: #0C3F75;
+    }
+    .history-banner-bottom:after{
+        width:373px;
+        height: 47px;
+        clip-path: polygon(339.377px 32.1579px, 373px 0px, 373px 47px, 0px 47px, 15.5183px 32.1579px, 339.377px 32.1579px);
+        background: #fff;
+    }
+    .history-date:after{
+        display: none;
+    }
+    .history-date{
+        padding: 100px 89px;
+    }
+    .history-date-item h4{
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .catalog{
+        padding: 60px 40px 100px;
+    }
+    .catalog .container{
+        max-width: 100%;
+        padding: 0;
+    }
+    .product-type li{
+        max-width: calc(100%/2 - 5px);
+        width: 100%;
+    }
+    .product-type li:last-child p{
+        word-break: break-all;
+    }
+    .catalog-item p{
+        margin-bottom: 0;
+    }
+    .catalog-item{
+        margin-bottom: 0;
+        max-width: calc(100% / 2 - 20px);
+    }
+    .catalog .section-subtitle{
+        margin-top: 20px!important;
+    }
+    .catalog .pagination{
+        margin-bottom: 0;
+    }
+    .review-page{
+        padding: 60px 40px 100px;
+    }
+    .review-page .col-xs-6{
+        width: 100%;
+    }
+    .review-page .review-slider{
+        flex-direction: column;
+    }
+    .review-page .review-slider{
+        margin-top: 50px;
+    }
+    .review-page .pagination{
+        justify-content: flex-start!important;
+    }
+    .fancybox__footer{
+        position: relative;
+        height: auto;
+        width: 100%;
+        left: auto;
+        top: auto;
+    }
+    .f-thumbs__track{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start
+    }
+    .fancybox__nav{
+        display: none!important;
+    }
+    .fancybox__container{
+        padding-top: 50px;
+    }
+    .is-compact .fancybox__footer{
+        background: #0A1E30;
+    }
 }
 @media screen and (max-width: 600px){
+    .review-item:after{
+
+        width:28px;
+        height: 25px;
+        clip-path: polygon(6.25532px 3.71638px, 0px 0px, 28px 0px, 28px 24.068px, 6.25532px 11.1491px, 6.25532px 3.71638px);
+    }
+    .review-page .review-slider{
+        margin-top: 40px;
+    }
+    .review-page .btn{
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    .review-page{
+        padding: 47px 15px 90px!important;
+    }
+    .aside-dropdown{
+        display: flex !important;
+        margin-left: 10px;
+    }
+    .product-type li{
+        display: none;
+        padding: 10px;
+    }
+    .product-type li:first-child{
+        display: flex;
+    }
+    .product-type li:not(:first-child).show{
+        display: flex!important;
+        background: #F2F5F7;
+        border: none;
+        margin-bottom: 0;
+    }
+    .product-type li:not(:first-child) p{
+        color: #0C3F75;
+    }
+    .product-type li:last-child p{
+        word-break: auto-phrase;
+    }
+    .product-type li:not(:first-child) .aside-icon svg path{
+        fill: #0C3F75;
+    }
+    .product-type li:not(:first-child)   .aside-icon{
+        background: transparent;
+    }
+    .product-type{
+        gap: 0;
+    }
+
+
+    .product-type li.opened .aside-dropdown{
+        transform: rotate(180deg);
+    }
+    .catalog{
+        padding: 47px 15px 90px;
+    }
+    .catalog .section-subtitle{
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 35px!important;
+    }
+    .catalog-item h4{
+        font-size: 18px;
+        line-height: 19px;
+        margin-bottom: 3px;
+    }
+    .catalog .pagination{
+        margin-bottom: 0;
+    }
+    .product-type li p{
+        font-size: 18px;
+        line-height: 19px;
+    }
+    .catalog-item p{
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .catalog-item{
+        max-width: 100%;
+    }
+    .catalog-list{
+        padding: 0 15px;
+    }
+    .catalog-aside{
+        padding: 0 15px;
+    }
+    .product-type li{
+        max-width: 100%;
+    }
+    .about-fly{
+        padding: 90px 15px;
+    }
+    .fly-info h4{
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .fly-info p, .fly-item p, .company p, .history-2 p{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .history-2 .container:after{
+        width:207px;
+        height: 26px;
+        clip-path: polygon(18.6594px 17.7895px, 0px 0px, 0px 26px, 207px 26px, 198.388px 17.7895px, 18.6594px 17.7895px);
+    }
+    .history-banner{
+        padding-top: 25px;
+        background: #0C3F75;
+    }
+    .history-date-item p{
+        padding: 0;
+    }
+    .history-date{
+        padding: 90px 15px;
+    }
+    .history-banner-bottom:after{
+        width:207px;
+        height: 26px;
+        clip-path: polygon(188.341px 17.7895px, 207px 0px, 207px 26px, 0px 26px, 8.61205px 17.7895px, 188.341px 17.7895px);
+
+    }
+    .history-banner-top:before{
+        top: 24px;
+        width:27px;
+        height: 37px;
+        clip-path: polygon(20.9681px 5.71323px, 27px 0px, 0px 0px, 0px 37px, 20.9681px 17.1397px, 20.9681px 5.71323px);
+    }
+    .history-banner img{
+        height: 230px;
+    }
+    .fly-item p{
+        margin-bottom: 22px;
+    }
+    .about-fly:before{
+        display: none;
+    }
+    .company{
+        padding: 90px 15px 293px;
+    }
+    .company:before{
+        background-size: 100%;
+        background-position: 100% 96%;
+    }
+    .history-2 .container:before{
+        top: -26px;
+        width:207px;
+        height: 26px;
+        clip-path: polygon(188.341px 17.7895px, 207px 0px, 207px 26px, 0px 26px, 8.61205px 17.7895px, 188.341px 17.7895px);
+    }
+    .history-2 .container{
+        padding: 30px 20px;
+    }
+    .history-2 h4 {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .company-top{
+        display: none;
+    }
+    .history-2{
+        padding: 0;
+    }
+    .company h4{
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .about-fly:after{
+
+        width:197px;
+        height: 31px;
+        clip-path: polygon(179.242px 21.2105px, 197px 0px, 197px 31px, 0px 31px, 8.196px 21.2105px, 179.242px 21.2105px);
+    }
+    .fly-info{
+        margin-bottom: 40px;
+    }
+    .history-date-item{
+        width: 100% ;
+        padding: 30px;
+    }
+    .history-bottom:before{
+        width:321px;
+        height: 25px;
+        clip-path: polygon(17.8988px 17.1053px, 0px 0px, 0px 25px, 321px 25px, 312.739px 17.1053px, 17.8988px 17.1053px);
+    }
+    .history-date-item h4{
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .history-date-item p{
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+    .history-item p{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .history-item h4{
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .history-item{
+        padding: 30px;
+        background: url('../images/about/history-item-bg-mob.png');
+        background-size: 100%;
+        border-bottom: 1px solid #9DB9CC;
+
+    }
+    .history .section-title.dark{
+        line-height: 33px;
+        margin-bottom: 40px;
+    }
+    .history{
+        padding: 90px 12px;
+        width: calc(100% - 6px);
+        margin: 0 auto;
+    }
+    .history-item {
+        width: 100%;
+    }
+    .fly-item{
+        width: calc(100%/3 - 10px) ;
+    }
+    .fly-item-img img{
+        max-width: 74px;
+    }
+    .modal-content .modal-dialog{
+        margin-top: 60px;
+    }
+    .modal-title{
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .modal-body p {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 20px;
+
+    }
+    .modal-dialog{
+        width: calc(100% - 10px);
+        margin: 40px auto;
+    }
+    .modal-footer .btn{
+        width: calc(100% - 46px);
+    }
+    .post-list .card-title{
+        font-size: 18px;
+        line-height: 19px;
+        margin-bottom: 5px;
+    }
+    .post-list .card-text{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .blog .pagination{
+        margin-bottom: 90px;
+    }
+    .post-list{
+        margin-bottom: 40px;
+    }
+    .blog{
+        padding: 47px 15px 0;
+    }
+    .post-list{
+        justify-content: center;
+    }
+    .post-banner-img:before{
+        display: none;
+    }
+    .post-content{
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    .post-content h4{
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .post .section-title{
+        line-height: 32px;
+        padding: 0 6px;
+    }
+    .post-content p, .post-content ul li, .post-content ol li{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .post{
+        padding: 47px 0 90px;
+    }
+
+    .back-to{
+        margin-bottom: 30px;
+    }
+    .clients-page .clients-list {
+        gap: 16px 6px;
+    }
+    .clients-page .client {
+        width: 162px;
+        height: 79px;
+    }
+    .clients.clients-page{
+        padding: 47px 15px 90px;
+    }
+    .license-info h4{
+        font-size: 18px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+    .license-info h2{
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 20px;
+
+    }
+    .license-list{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .license-info .container:after, .license-info:nth-child(4) .container:after {
+         background-size: 50%;
+    }
+    .license-info p{
+        padding: 0;
+    }
+    .license-list{
+        justify-content: center;
+        align-items: center;
+        gap: 15px 0;
+    }
+    .license .col-3{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .license-info{
+        padding: 0 15px;
+    }
+    .license .license-item h4{
+        font-size: 22px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .license-info .col-9{
+        padding: 0;
+    }
+    .license-info h4{
+        padding: 0;
+    }
+
+    .license-item img{
+        width: 100%;
+    }
+   .license .license-item p{
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+    .license p{
+        width: 100%!important;
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 40px;
+    }
+    .license h4{
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .license .section-title{
+        margin-top: 47px;
+        margin-bottom: 15px;
+    }
+    .license{
+        padding: 0 15px;
+    }
+    footer:after{
+        width:37px;
+        height: 37px;
+        clip-path: polygon(11.7341px 11.6842px, 37px 37px, 37px 0px, 0px 0px, 11.7341px 11.6842px);
+        right: 0;
+        left: auto;
+    }
+    .copyright:after{
+        width:34px;
+        height: 47px;
+        clip-path: polygon(7.59574px 7.25735px, 0px 0px, 34px 0px, 34px 47px, 7.59574px 21.7721px, 7.59574px 7.25735px);
+        background: #0A1E30;
+        top: 0;
+    }
+    .contact-page iframe{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 260px;
+    }
+    .contact-page .col-4{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-page h4{
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .contact-page .sub-title{
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .contact-page{
+        padding: 60px 15px 90px;
+    }
     .fixed-bottom{
         display: flex;
     }
@@ -829,5 +1678,17 @@
     }
     .technologies .section-title{
         letter-spacing: -1px;
+    }
+    .page-404{
+        padding: 190px 30px;
+    }
+    .page-404 h1{
+        margin-bottom: 30px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .page-404 p{
+        font-size: 15px;
+        margin-bottom: 30px;
     }
 }

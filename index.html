@@ -81,7 +81,7 @@
                 <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
             </div>
             <div class="contact-us">
-                <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
+                <a class="btn btn-primary btn-blue" data-bs-toggle="modal" href="#contactModal" role="button">связаться <span class="btn-arrow"></span></a>
             </div>
         </div>
     </nav>
@@ -176,7 +176,7 @@
                                 </svg>
                         </span>
                         <p>Центр передового опыта по производству теплообменников</p>
-                        <button class="btn btn-primary plus"></button>
+                        <button class="btn btn-primary plus" data-bs-toggle="modal" href="#features1" role="button"></button>
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end p-0">
@@ -187,7 +187,7 @@
 </svg>
                         </span>
                         <p>Эффективная система управления качеством</p>
-                        <button class="btn btn-primary plus"></button>
+                        <button class="btn btn-primary plus" data-bs-toggle="modal" href="#features1" role="button"></button>
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
 </defs>
 </svg></span>
                         <p>Соответствие требованиям заказчиков</p>
-                        <button class="btn btn-primary plus"></button>
+                        <button class="btn btn-primary plus" data-bs-toggle="modal" href="#features1" role="button"></button>
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end p-0">
@@ -216,7 +216,7 @@
 </svg>
                         </span>
                         <p>Лидерство в области охраны труда и окружающей среды</p>
-                        <button class="btn btn-primary plus"></button>
+                        <button class="btn btn-primary plus" data-bs-toggle="modal" href="#features1" role="button"></button>
                     </div>
                     <div class="why-us ">
                         <span>
@@ -225,7 +225,7 @@
 </svg>
                         </span>
                         <p>Участие в проектах создания самолетов нового поколения Airbus 380, Boeing <br> 787, MRJ</p>
-                        <button class="btn btn-primary plus"></button>
+                        <button class="btn btn-primary plus" data-bs-toggle="modal" href="#features1" role="button"></button>
                     </div>
                 </div>
             </div>
@@ -366,6 +366,7 @@
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <button class="btn btn-primary m-auto read-all">прочитать все отзывы <span class="btn-arrow"></span></button>
         </div>
     </section>
     <section class="contact">
@@ -561,11 +562,12 @@
     </nav>
     <div class="sidebar-overlay"></div>
     <nav id="sidebar">
-
-
-
-        <div class="sidebar-header">
+        <div class="sidebar-header d-flex justify-content-between">
             <a href=""><img src="images/logo-white.svg" alt=""></a>
+            <a href="" class="menu-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 4L4 16M4 4L16 16" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
         </div>
 
         <ul class="list-unstyled components">
@@ -615,12 +617,80 @@
                 <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
             </div>
             <div class="contact-us">
-                <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
+                <a class="btn btn-primary btn-blue" data-bs-toggle="modal" href="#contactModal" role="button">связаться <span class="btn-arrow"></span></a>
             </div>
         </div>
 
 
     </nav>
+</div>
+<div class="modal fade" id="features1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title blue" id="exampleModalToggleLabel">Центр передового опыта по производству теплообменников</h4>
+            </div>
+            <div class="modal-body">
+               <p class="blue">25 лет успешной работы на рынке позволили компании стать одним из мировых центров по производству авиационных теплообменников. Важным этапом в развитии компании стал ввод в эксплуатацию в 2011 году научно-производственного комплекса в г. Кимры Тверской области, созданного с целью обеспечения серийных поставок по программам Boeing 787, Airbus 380, расширения номенклатуры выпускаемой продукции, удовлетворения растущих потребностей российского авиационного рынка.
+
+                   Открытая в конце 2017 года вторая очередь производственного комплекса позволит выпускать самые большие в мире авиационные теплообменники уникальной конструкции, которые эксплуатируются на самолетах корпорации Boeing семейств 767, 777, 787. Для реализации этого проекта с Минпромторгом был заключен специальный инвестиционный контракт (СПИК), первый в авиационной промышленности России.  
+                   <br><br>
+                   Комплекс сертифицирован на серебряный и золотой уровни международного стандарта по энергоэффективности LEED, оснащен современным оборудованием и использует методы бережливого производства (Lean Manufacturing).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class=" btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Закрыть <span class="close-icon"></span></button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-contact fade" id="contactModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h2 class="modal-title blue text-center" >Заголовок</h2>
+            </div>
+            <div class="modal-body">
+                <p class="blue text-center">Здесь описание</p>
+                <form action="" class="needs-validation" novalidate>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Имя" aria-label="name" aria-describedby="basic-addon1">
+                        <div class="invalid-feedback">
+                            Не заполнено
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control is-invalid" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon2">
+                        <div class="invalid-feedback">
+                            Не заполнено
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="tel" class="form-control"  placeholder="+7 777 777 777" aria-describedby="basic-addon3">
+                        <div class="invalid-feedback">
+                            Не заполнено
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label blue" for="flexCheckDefault">
+                            Я согласен на обработку <a href=""> персональных данных</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class=" btn btn-primary" >отправить <span class="btn-arrow"></span></button>
+
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="js/jquery-3.7.1.min.js"></script>
