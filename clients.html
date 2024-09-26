@@ -17,11 +17,17 @@
     <div class="top-bar">
         <div class="container-fluid d-flex justify-content-between align-items-center h-100">
             <div class="lang">
-                <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+                <a href="#" class="text-decoration-none">
+                    <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+                </a>
             </div>
             <div class="addresses d-flex">
-                <div class="blue address-icon position-relative d-flex align-items-center">г. Москва, Петровско-Разумовский проезд 19/1</div>
-                <div  class="blue address-icon position-relative d-flex align-items-center">г. Кимры, ул. Кленовая, 39</div>
+                <div>
+                    <a href="#" class="blue text-decoration-none address-icon position-relative d-flex align-items-center">г. Москва, Петровско-Разумовский проезд 19/1</a>
+                </div>
+                <div>
+                    <a href="#"  class="blue text-decoration-none address-icon position-relative d-flex align-items-center">г. Кимры, ул. Кленовая, 39</a>
+                </div>
                 <div><a href="mailto:hsn@hs-nauka.ru" class="blue text-decoration-none mail-icon position-relative d-flex align-items-center">hsn@hs-nauka.ru</a></div>
                 <div><a href="tel:+7 (495) 755-77-00"  class="blue text-decoration-none phone-icon position-relative d-flex align-items-center">+7 (495) 755-77-00</a></div>
             </div>
@@ -34,6 +40,12 @@
                 меню <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-close  justify-content-end">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4L4 16M4 4L16 16" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle d-flex production" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -81,7 +93,7 @@
                 <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
             </div>
             <div class="contact-us">
-                <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
+                <a class="btn btn-primary btn-blue" data-bs-toggle="modal" href="#contactModal" role="button">связаться <span class="btn-arrow"></span></a>
             </div>
         </div>
     </nav>
@@ -92,7 +104,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="section-title text-center blue">Наши клиенты</h2>
+                    <h1 class="section-title text-center blue">Наши клиенты</h1>
                 </div>
             </div>
             <div class="row clients-list">
@@ -258,8 +270,8 @@
     >
         <ul class="nav nav-justified w-100" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                        role="tab" aria-controls="home" aria-selected="true">
+                <a href="#" class="nav-link active text-decoration-none" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                   role="tab" aria-controls="home" aria-selected="true">
                     <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6.66667 5.33333C6.66667 6.06971 6.06971 6.66667 5.33333 6.66667C4.59695 6.66667 4 6.06971 4 5.33333C4 4.59695 4.59695 4 5.33333 4C6.06971 4 6.66667 4.59695 6.66667 5.33333Z" fill="#6D8CAC"/>
 <path d="M6.66667 10C6.66667 10.7364 6.06971 11.3333 5.33333 11.3333C4.59695 11.3333 4 10.7364 4 10C4 9.26362 4.59695 8.66667 5.33333 8.66667C6.06971 8.66667 6.66667 9.26362 6.66667 10Z" fill="#6D8CAC"/>
@@ -273,26 +285,26 @@
 </svg>
 </span>
                     Продукция
-                </button>
+                </a>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes" type="button"
-                        role="tab" aria-controls="intro" aria-selected="true">
+                <a href class="nav-link text-decoration-none" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes" type="button"
+                   role="tab" aria-controls="intro" aria-selected="true">
                     <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.6533 6.49414C14.585 6.36068 14.5085 6.2207 14.4238 6.07422L12.5 7.99805L12.002 7.5L13.9258 5.57617C13.776 5.48503 13.6361 5.4069 13.5059 5.3418C13.3757 5.27669 13.2406 5.21647 13.1006 5.16113C12.9606 5.10579 12.8174 5.0651 12.6709 5.03906C12.5244 5.01302 12.3633 5 12.1875 5C11.9271 5.00326 11.6781 5.03743 11.4404 5.10254C11.2028 5.16764 10.9798 5.26204 10.7715 5.38574C10.5632 5.50944 10.3727 5.65592 10.2002 5.8252C10.0277 5.99447 9.87956 6.1849 9.75586 6.39648C9.63216 6.60807 9.53776 6.83268 9.47266 7.07031C9.40755 7.30794 9.375 7.55534 9.375 7.8125C9.375 7.89063 9.37826 7.96712 9.38477 8.04199C9.39128 8.11686 9.40104 8.19173 9.41406 8.2666L5.47852 12.2021C5.32227 12.3617 5.20345 12.5407 5.12207 12.7393C5.04069 12.9378 5 13.1462 5 13.3643C5 13.5889 5.04395 13.8005 5.13184 13.999C5.21973 14.1976 5.33691 14.3717 5.4834 14.5215C5.62988 14.6712 5.80241 14.7884 6.00098 14.873C6.19954 14.9577 6.41113 15 6.63574 15C6.8571 15 7.06706 14.9593 7.26562 14.8779C7.46419 14.7965 7.6416 14.6777 7.79785 14.5215L11.7334 10.5859C11.8115 10.599 11.888 10.6087 11.9629 10.6152C12.0378 10.6217 12.1126 10.625 12.1875 10.625C12.4479 10.6217 12.6969 10.5876 12.9346 10.5225C13.1722 10.4574 13.3952 10.363 13.6035 10.2393C13.8118 10.1156 14.0023 9.96908 14.1748 9.7998C14.3473 9.63053 14.4954 9.4401 14.6191 9.22852C14.7428 9.01693 14.8372 8.79232 14.9023 8.55469C14.9674 8.31706 15 8.06966 15 7.8125C14.9935 7.63346 14.9788 7.4707 14.9561 7.32422C14.9333 7.17773 14.8942 7.03613 14.8389 6.89941C14.7835 6.7627 14.7217 6.6276 14.6533 6.49414Z" fill="#6D8CAC"/>
 </svg></span>
                     Технологии
-                </button>
+                </a>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button"
-                        role="tab" aria-controls="profile" aria-selected="false">
+                <a href="" class="nav-link text-decoration-none" id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button"
+                   role="tab" aria-controls="profile" aria-selected="false">
                     <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.11266 13.7125L6.2877 12.8875L11.2374 7.93779L6.70018 7.93779V6.76634H13.2338V13.3L12.0624 13.3L12.0624 8.76274L7.11266 13.7125Z" fill="#6D8CAC" stroke="6D8CAC" stroke-width="1"/>
 </svg>
 </span>
                     Связаться
-                </button>
+                </a>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="sidebarCollapse" type="button"
                 >
@@ -307,11 +319,12 @@
     </nav>
     <div class="sidebar-overlay"></div>
     <nav id="sidebar">
-
-
-
-        <div class="sidebar-header">
+        <div class="sidebar-header d-flex justify-content-between">
             <a href=""><img src="images/logo-white.svg" alt=""></a>
+            <a href="" class="menu-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 4L4 16M4 4L16 16" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
         </div>
 
         <ul class="list-unstyled components">
@@ -344,29 +357,106 @@
         </ul>
         <div class='nav-addresses'>
             <div class="">
-                <h4>г. Москва</h4>
-                <p>Петровско-Разумовский проезд 19/1</p>
-                <h4>г. Кимры</h4>
-                <p>ул. Кленовая, 39</p>
+                <a href="#" class="text-decoration-none">
+                    <h4>г. Москва</h4>
+                    <p>Петровско-Разумовский проезд 19/1</p>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <h4>г. Кимры</h4>
+                    <p>ул. Кленовая, 39</p>
+                </a>
             </div>
             <div class>
-                <h4>hsn@hs-nauka.ru</h4>
+                <a href="mailto:hsn@hs-nauka.ru" class="text-decoration-none">
+                    <h4>hsn@hs-nauka.ru</h4>
+                </a>
             </div>
             <div class>
-                <h4>+7 (495) 755-77-00</h4>
+                <a href="tel:+7 (495) 755-77-00" class="text-decoration-none">
+                    <h4>+7 (495) 755-77-00</h4>
+                </a>
+
             </div>
         </div>
         <div class="contacts d-flex justify-content-between">
             <div class="lang">
-                <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+                <a href="#" class="lang-selected text-decoration-none blue position-relative d-flex align-items-center">Eng</a>
             </div>
             <div class="contact-us">
-                <a href="" class="btn btn-primary btn-blue">связаться <span class="btn-arrow"></span></a>
+                <a class="btn btn-primary btn-blue" data-bs-toggle="modal" href="#contactModal" role="button">связаться <span class="btn-arrow"></span></a>
             </div>
         </div>
 
 
     </nav>
+</div>
+<div class="modal fade" id="features1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title blue" id="exampleModalToggleLabel">Центр передового опыта по производству теплообменников</h4>
+            </div>
+            <div class="modal-body">
+                <p class="blue">25 лет успешной работы на рынке позволили компании стать одним из мировых центров по производству авиационных теплообменников. Важным этапом в развитии компании стал ввод в эксплуатацию в 2011 году научно-производственного комплекса в г. Кимры Тверской области, созданного с целью обеспечения серийных поставок по программам Boeing 787, Airbus 380, расширения номенклатуры выпускаемой продукции, удовлетворения растущих потребностей российского авиационного рынка.
+
+                    Открытая в конце 2017 года вторая очередь производственного комплекса позволит выпускать самые большие в мире авиационные теплообменники уникальной конструкции, которые эксплуатируются на самолетах корпорации Boeing семейств 767, 777, 787. Для реализации этого проекта с Минпромторгом был заключен специальный инвестиционный контракт (СПИК), первый в авиационной промышленности России.  
+                    <br><br>
+                    Комплекс сертифицирован на серебряный и золотой уровни международного стандарта по энергоэффективности LEED, оснащен современным оборудованием и использует методы бережливого производства (Lean Manufacturing).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class=" btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Закрыть <span class="close-icon"></span></button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-contact fade" id="contactModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h2 class="modal-title blue text-center" >Заголовок</h2>
+            </div>
+            <div class="modal-body">
+                <p class="blue text-center">Здесь описание</p>
+                <form action="" class="needs-validation" novalidate>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Имя" aria-label="name" aria-describedby="basic-addon1">
+                        <div class="invalid-feedback">
+                            Не заполнено
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control is-invalid" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon2">
+                        <div class="invalid-feedback">
+                            Не заполнено
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="tel" class="form-control"  placeholder="+7 777 777 777" aria-describedby="basic-addon3">
+                        <div class="invalid-feedback">
+                            Не заполнено
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label blue" for="flexCheckDefault">
+                            Я согласен на обработку <a href=""> персональных данных</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class=" btn btn-primary" >отправить <span class="btn-arrow"></span></button>
+
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="js/jquery-3.7.1.min.js"></script>

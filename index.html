@@ -17,11 +17,17 @@
     <div class="top-bar">
         <div class="container-fluid d-flex justify-content-between align-items-center h-100">
             <div class="lang">
-                <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+                <a href="#" class="text-decoration-none">
+                    <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+                </a>
             </div>
             <div class="addresses d-flex">
-                <div class="blue address-icon position-relative d-flex align-items-center">г. Москва, Петровско-Разумовский проезд 19/1</div>
-                <div  class="blue address-icon position-relative d-flex align-items-center">г. Кимры, ул. Кленовая, 39</div>
+                <div>
+                    <a href="#" class="blue text-decoration-none address-icon position-relative d-flex align-items-center">г. Москва, Петровско-Разумовский проезд 19/1</a>
+                </div>
+                <div>
+                    <a href="#"  class="blue text-decoration-none address-icon position-relative d-flex align-items-center">г. Кимры, ул. Кленовая, 39</a>
+                </div>
                 <div><a href="mailto:hsn@hs-nauka.ru" class="blue text-decoration-none mail-icon position-relative d-flex align-items-center">hsn@hs-nauka.ru</a></div>
                 <div><a href="tel:+7 (495) 755-77-00"  class="blue text-decoration-none phone-icon position-relative d-flex align-items-center">+7 (495) 755-77-00</a></div>
             </div>
@@ -34,6 +40,12 @@
                 меню <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-close  justify-content-end">
+                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4L4 16M4 4L16 16" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle d-flex production" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -89,31 +101,36 @@
 <main>
     <section class="banner">
         <div class="container-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active"data-bs-interval="4000">
                     <div class="carousel-top-clip position-absolute top-0 w-100"> </div>
                     <img src="images/home/banner1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block text-center">
                         <h5>Мы, АО «ХC-Наука»,</h5>
                        <h1>строим блестящее будущее в мировой аэрокосмической промышленности</h1>
-                        <a href="" class="btn btn-secondary m-auto">история компании <span class="home-icon"></span></a>
+                        <a href="" class="text-decoration-none">
+                            <button class="btn btn-secondary m-auto">история компании <span class="home-icon"></span></button>
+                        </a>
+
                     </div>
                     <div class="carousel-bottom-clip position-absolute bottom-0 w-100"> </div>
 
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="4000">
                     <div class="carousel-top-clip position-absolute top-0 w-100"> </div>
 
                     <img src="images/home/banner2.png" class="d-block w-100 " alt="...">
                     <div class="carousel-caption d-none d-md-block text-center">
                         <h1>Поставляем продукцию самолетостроительным заводам, авиакомпаниям</h1>
-                        <a href="" class="btn btn-secondary m-auto">вся продукция <span></span></a>
+                        <a href="" class="text-decoration-none">
+                            <button class="btn btn-secondary m-auto">вся продукция <span class="production-btn"></span></button>
+                        </a>
                     </div>
                     <div class="carousel-bottom-clip position-absolute bottom-0 w-100"> </div>
 
@@ -139,7 +156,7 @@
             <div class="row ">
                 <div class="col-md-7 about-info">
                     <h5 class="sub-title blue">01 — О компании</h5>
-                    <h2 class="section-title blue">Мы поставляем продукцию<span class="light-blue"> самолетостроительным <br>  заводам,авиакомпаниям</span></h2>
+                    <h1 class="section-title blue">Мы поставляем продукцию<span class="light-blue"> самолетостроительным <br>  заводам,авиакомпаниям</span></h1>
                <p class="blue">а также компаниям, занимающимся послепродажным обслуживанием и ремонтом в России, Северной Америке, Европе и Тихоокеанско-азиатском регионе.</p>
                     <a href="" class="btn btn-primary">прочитать историю <span class="btn-arrow"></span></a>
                     <div class="about-mission">
@@ -156,13 +173,13 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h5 class="sub-title text-center dark">01 — О компании</h5>
-                    <h2 class="section-title dark">Почему АО «ХC-Наука»</h2>
+                    <h1 class="section-title dark">Почему АО «ХC-Наука»</h1>
                 </div>
 
             </div>
             <div class="row">
                 <div class="col-6 d-flex justify-content-end p-0">
-                    <div class="why-us">
+                    <div class="why-us" data-bs-toggle="modal" href="#features1" role="button">
                         <span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_373_15670)">
@@ -180,7 +197,7 @@
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end p-0">
-                    <div class="why-us bg-white">
+                    <div class="why-us bg-white" data-bs-toggle="modal" href="#features1" role="button">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
 <path d="M8.00164 10.5201C7.31454 10.5201 6.65559 10.2545 6.16974 9.78196C5.68389 9.30937 5.41094 8.6684 5.41094 8.00005C5.41094 7.3317 5.68389 6.69073 6.16974 6.21814C6.65559 5.74555 7.31454 5.48005 8.00164 5.48005C8.68873 5.48005 9.34769 5.74555 9.83354 6.21814C10.3194 6.69073 10.5923 7.3317 10.5923 8.00005C10.5923 8.6684 10.3194 9.30937 9.83354 9.78196C9.34769 10.2545 8.68873 10.5201 8.00164 10.5201ZM13.5013 8.69845C13.5309 8.46805 13.5531 8.23765 13.5531 8.00005C13.5531 7.76245 13.5309 7.52485 13.5013 7.28005L15.0631 6.10645C15.2038 5.99845 15.2408 5.80405 15.152 5.64565L13.6716 3.15445C13.5827 2.99605 13.3829 2.93125 13.22 2.99605L11.3769 3.71605C10.992 3.43525 10.5923 3.19045 10.126 3.01045L9.85213 1.10245C9.8371 1.01765 9.79169 0.940758 9.72394 0.885407C9.6562 0.830057 9.5705 0.799819 9.48203 0.80005H6.52124C6.33619 0.80005 6.18075 0.92965 6.15114 1.10245L5.87727 3.01045C5.41094 3.19045 5.01124 3.43525 4.62633 3.71605L2.78324 2.99605C2.6204 2.93125 2.42054 2.99605 2.33172 3.15445L0.851322 5.64565C0.755096 5.80405 0.799508 5.99845 0.940146 6.10645L2.50196 7.28005C2.47236 7.52485 2.45015 7.76245 2.45015 8.00005C2.45015 8.23765 2.47236 8.46805 2.50196 8.69845L0.940146 9.89365C0.799508 10.0016 0.755096 10.196 0.851322 10.3545L2.33172 12.8456C2.42054 13.004 2.6204 13.0617 2.78324 13.0041L4.62633 12.2768C5.01124 12.5648 5.41094 12.8096 5.87727 12.9896L6.15114 14.8976C6.18075 15.0704 6.33619 15.2 6.52124 15.2H9.48203C9.66708 15.2 9.82253 15.0704 9.85213 14.8976L10.126 12.9896C10.5923 12.8025 10.992 12.5648 11.3769 12.2768L13.22 13.0041C13.3829 13.0617 13.5827 13.004 13.6716 12.8456L15.152 10.3545C15.2408 10.196 15.2038 10.0016 15.0631 9.89365L13.5013 8.69845Z" fill="#0070BB"/>
@@ -193,7 +210,7 @@
             </div>
             <div class="row">
                 <div class="col-6 d-flex justify-content-start p-0">
-                    <div class="why-us">
+                    <div class="why-us" data-bs-toggle="modal" href="#features1" role="button">
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <g clip-path="url(#clip0_500_16662)">
 <path d="M20 20.444V24L18 22L16 24V20.444C15.2374 20.0037 14.6414 19.3241 14.3045 18.5106C13.9675 17.6971 13.9084 16.7952 14.1363 15.9446C14.3642 15.0941 14.8664 14.3425 15.565 13.8065C16.2635 13.2704 17.1195 12.9799 18 12.9799C18.8805 12.9799 19.7365 13.2704 20.435 13.8065C21.1336 14.3425 21.6358 15.0941 21.8637 15.9446C22.0916 16.7952 22.0325 17.6971 21.6955 18.5106C21.3586 19.3241 20.7626 20.0037 20 20.444ZM14 21.463V22H3V3C3 2.20435 3.31607 1.44129 3.87868 0.87868C4.44129 0.31607 5.20435 0 6 0L18 0C18.7957 0 19.5587 0.31607 20.1213 0.87868C20.6839 1.44129 21 2.20435 21 3V11.809C19.7162 11.0633 18.2013 10.8206 16.7488 11.1281C15.2963 11.4356 14.0096 12.2712 13.1381 13.4732C12.2665 14.6752 11.8722 16.1579 12.0314 17.634C12.1907 19.1101 12.8922 20.4746 14 21.463ZM7 6H17V4H7V6ZM7 10H17V8H7V10ZM7 14H12V12H7V14Z" fill="#F2F5F7"/>
@@ -209,7 +226,7 @@
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end p-0">
-                    <div class="why-us bg-blue">
+                    <div class="why-us bg-blue" data-bs-toggle="modal" href="#features1" role="button">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
 <path d="M3.62439 15.8848C3.3241 16.0754 2.94295 15.8087 3.0193 15.4612L4.12843 10.414C4.15911 10.2744 4.11296 10.129 4.00739 10.0327L0.26983 6.62178C0.0130311 6.38743 0.15685 5.95962 0.503069 5.92798L5.40437 5.48013C5.55391 5.46647 5.68321 5.37019 5.73916 5.23083L7.62881 0.524479C7.76316 0.189865 8.23685 0.189865 8.3712 0.52448L10.2608 5.23083C10.3168 5.37019 10.4461 5.46647 10.5956 5.48013L15.4969 5.92798C15.8432 5.95962 15.987 6.38743 15.7302 6.62178L11.9926 10.0327C11.887 10.129 11.8409 10.2744 11.8716 10.414L12.9807 15.4612C13.0571 15.8087 12.6759 16.0754 12.3756 15.8848L8.21443 13.2424C8.08356 13.1593 7.91646 13.1593 7.78559 13.2424L3.62439 15.8848Z" fill="#F2F5F7"/>
@@ -218,7 +235,7 @@
                         <p>Лидерство в области охраны труда и окружающей среды</p>
                         <button class="btn btn-primary plus" data-bs-toggle="modal" href="#features1" role="button"></button>
                     </div>
-                    <div class="why-us ">
+                    <div class="why-us " data-bs-toggle="modal" href="#features1" role="button">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <path d="M11.2978 19H9.65577L11.4298 13.75H8.48789L7.85431 14.7142C7.69497 14.956 7.47797 15.1544 7.22284 15.2915C6.9677 15.4287 6.68244 15.5003 6.3927 15.5H5.00934L6.29402 12L5 8.5H6.3857C6.67494 8.49962 6.95975 8.571 7.21456 8.70774C7.46936 8.84448 7.68618 9.04229 7.84555 9.28342L8.48789 10.25H11.4315L9.65577 5H11.2978C11.6125 4.99994 11.9215 5.08458 12.1921 5.24502C12.4628 5.40546 12.6852 5.63577 12.8359 5.91175L15.2546 10.25H17.1845C17.6069 10.2447 18.0176 10.3878 18.345 10.6544C18.6724 10.921 18.8956 11.294 18.9755 11.7083C19.018 11.9594 19.0051 12.2166 18.9378 12.4622C18.8705 12.7077 18.7504 12.9357 18.5858 13.1301C18.4212 13.3245 18.2162 13.4806 17.9849 13.5877C17.7537 13.6948 17.5019 13.7502 17.247 13.75H15.2546L12.8336 18.0923C12.6825 18.3672 12.4602 18.5965 12.1901 18.7561C11.9199 18.9158 11.6117 19 11.2978 19Z" fill="#F2F5F7"/>
@@ -238,27 +255,33 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h5 class="sub-title text-center dark">03 — Наша продукция</h5>
-                    <h2 class="section-title text-center dark">Каталог продукции</h2>
+                    <h1 class="section-title text-center dark">Каталог продукции</h1>
                 </div>
             </div>
             <div class="row text-center m-auto  justify-content-center">
                 <div class="product-item col-md-6 bg-white">
-                    <h4 class="product-title blue ">
-                        Авиационные теплообменники
-                    </h4>
-                    <img src="images/home/product1.png" alt="">
-                    <button class="btn btn-primary btn-arrow"></button>
+                    <a href="#" class="text-decoration-none">
+                        <h4 class="product-title blue ">
+                            Авиационные теплообменники
+                        </h4>
+                        <img src="images/home/product1.png" alt="">
+
+                    </a>
+                    <a class="btn btn-primary btn-arrow"></a>
                 </div>
+
                 <div class="product-item col-md-6 bg-white">
+                    <a href="#" class="text-decoration-none">
                     <h4 class="product-title blue">
                         Авиационные теплообменники
                     </h4>
                     <img src="images/home/product2.png" alt="">
-                    <button class="btn btn-primary btn-arrow "></button>
+                    </a>
+                    <a class="btn btn-primary btn-arrow "></a>
 
                 </div>
-                <div class="col-12 text-center">
-                    <button class="btn btn-secondary m-auto">Перейти в каталог <span class="btn-arrow"></span></button>
+                <div class="col-12 text-center w-auto">
+                    <a href class=" text-decoration-none btn btn-secondary m-auto">Перейти в каталог <span class="btn-arrow"></span></a>
                 </div>
             </div>
         </div>
@@ -268,31 +291,55 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h5 class="sub-title text-center">04 — Почему мы</h5>
-                    <h2 class="section-title text-center blue">Наши клиенты</h2>
+
+                        <h5 class="sub-title text-center">04 — Почему мы</h5>
+                        <h1 class="section-title text-center blue">Наши клиенты</h1>
+
+
                 </div>
             </div>
             <div class="row clients-list">
                 <div class="client col-md-3">
-                    <img src="images/clients/client1.svg" alt="">
+                    <a href="">
+
+                        <img src="images/clients/client1.svg" alt="">
+                    </a>
                 </div>
                 <div class="client col-md-3">
-                    <img src="images/clients/client2.svg" alt="">
+                    <a href="">
+
+                        <img src="images/clients/client2.svg" alt="">
+                    </a>
                 </div>
                 <div class="client col-md-3">
-                    <img src="images/clients/client3.svg" alt="">
+                    <a href="">
+
+                        <img src="images/clients/client3.svg" alt="">
+                    </a>
                 </div>
                 <div class="client col-md-3">
-                    <img src="images/clients/client4.svg" alt="">
+                    <a href="">
+
+                        <img src="images/clients/client4.svg" alt="">
+                    </a>
                 </div>
                 <div class="client col-md-3">
-                    <img src="images/clients/client5.svg" alt="">
+                    <a href="">
+
+                        <img src="images/clients/client5.svg" alt="">
+                    </a>
                 </div>
                 <div class="client col-md-3">
-                    <img src="images/clients/client6.svg" alt="">
+                    <a href="">
+
+                        <img src="images/clients/client6.svg" alt="">
+                    </a>
                 </div>
                 <div class="client col-md-3">
-                    <img src="images/clients/client7.svg" alt="">
+                    <a href="">
+
+                        <img src="images/clients/client7.svg" alt="">
+                    </a>
                 </div>
                 <div class="client col-md-3">
                     <a href="" class="btn btn-primary">Посмотреть всех <span class="btn-arrow"></span></a>
@@ -310,7 +357,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="section-title text-center blue mb-0">Отзывы</h2>
+                    <h1 class="section-title text-center blue mb-0">Отзывы</h1>
                 </div>
             </div>
             <div class=" review-slider swiper">
@@ -366,14 +413,17 @@
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <button class="btn btn-primary m-auto read-all">прочитать все отзывы <span class="btn-arrow"></span></button>
+
+
+                <a href="" class="btn btn-primary m-auto read-all ">прочитать все отзывы <span class="btn-arrow"></span></a>
+
         </div>
     </section>
     <section class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="section-title text-center">Свяжитесь с нами</h2>
+                    <h1 class="section-title text-center">Свяжитесь с нами</h1>
                     <p class="text-center">Заполните форму и менеджер свяжется с вами</p>
 
                 </div>
@@ -426,12 +476,17 @@
                     </svg>
                          Адрес</h5>
                     <div class="footer-address">
-                        <h2>Москва</h2>
-                        <p>Петровско-Разумовский проезд 19/1</p>
+                        <a href="#" class="text-decoration-none">
+                            <h2>Москва</h2>
+                            <p>Петровско-Разумовский проезд 19/1</p>
+                        </a>
                     </div>
                     <div class="footer-address">
-                        <h2>Кимры</h2>
-                        <p>ул. Кленовая, 39</p>
+                        <a href="#" class="text-decoration-none">
+                            <h2>Кимры</h2>
+                            <p>ул. Кленовая, 39</p>
+                        </a>
+
                     </div>
                 </div>
                 <div class="col">
@@ -440,14 +495,14 @@
                     </svg>
                          Почта</h5>
                     <div class="footer-address">
-                        <h2>hsn@hs-nauka.ru</h2>
+                        <h2><a class="text-decoration-none" href="mailto:hsn@hs-nauka.ru">hsn@hs-nauka.ru</a></h2>
                     </div>
                     <h5 class="sub-title dark text-uppercase"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.7953 13.8979C16.8412 13.9697 16.9056 14.0946 16.9331 14.1756C16.9928 14.3421 17.0181 14.6035 16.9859 14.7539C16.94 14.9737 16.7769 15.2489 16.3359 15.8458C16.0694 16.2044 15.5916 16.6971 15.3987 16.8128C14.9416 17.0811 14.5534 17.0649 13.6599 16.7388C12.1277 16.1789 10.6508 15.36 9.22661 14.2843C6.50001 12.2254 4.51541 9.63212 3.18543 6.38418C3.01545 5.97008 2.98789 5.8359 3.00396 5.51204C3.02235 5.11877 3.14406 4.82036 3.46105 4.39934C3.8125 3.93435 4.63486 3.26811 5.07356 3.09692C5.48936 2.93495 5.86603 2.97662 6.16005 3.21718C6.32316 3.35371 7.1409 4.36233 7.46938 4.83424C7.71745 5.1928 8.0597 5.748 8.19064 6.00248C8.36063 6.3379 8.39047 6.67102 8.28022 6.99722C8.19293 7.25401 8.11714 7.3396 7.64852 7.71434C7.40966 7.90867 7.19373 8.08682 7.17304 8.10992C7.15239 8.1354 7.10645 8.21635 7.07198 8.29268C6.93188 8.59574 7.01687 9.00985 7.35222 9.68765C7.61181 10.2151 7.94025 10.6824 8.42265 11.2122C8.83154 11.6633 9.36442 12.119 9.78018 12.3734C10.3154 12.7019 11.0114 12.9518 11.395 12.9541C11.5604 12.9541 11.7947 12.887 11.9141 12.8037C11.9624 12.7714 12.1438 12.5655 12.3207 12.3457C12.7594 11.7974 12.8973 11.6748 13.1591 11.6008C13.4026 11.5291 13.7311 11.6054 14.1744 11.8344C14.9508 12.2346 16.5059 13.4584 16.7953 13.8979Z" fill="#F2F5F7" fill-opacity="0.7"/>
                     </svg>
                          телефон</h5>
                     <div class="footer-address">
-                        <h2>+7 (495) 755-77-00</h2>
+                        <h2><a href="tel:  +7 (495) 755-77-00" class="text-decoration-none">  +7 (495) 755-77-00</a> </h2>
 
                     </div>
                 </div>
@@ -513,7 +568,7 @@
         >
         <ul class="nav nav-justified w-100" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                <a href="#" class="nav-link active text-decoration-none" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
                         role="tab" aria-controls="home" aria-selected="true">
                     <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6.66667 5.33333C6.66667 6.06971 6.06971 6.66667 5.33333 6.66667C4.59695 6.66667 4 6.06971 4 5.33333C4 4.59695 4.59695 4 5.33333 4C6.06971 4 6.66667 4.59695 6.66667 5.33333Z" fill="#6D8CAC"/>
@@ -528,26 +583,26 @@
 </svg>
 </span>
                     Продукция
-                </button>
+                </a>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes" type="button"
+                <a href class="nav-link text-decoration-none" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes" type="button"
                         role="tab" aria-controls="intro" aria-selected="true">
                     <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.6533 6.49414C14.585 6.36068 14.5085 6.2207 14.4238 6.07422L12.5 7.99805L12.002 7.5L13.9258 5.57617C13.776 5.48503 13.6361 5.4069 13.5059 5.3418C13.3757 5.27669 13.2406 5.21647 13.1006 5.16113C12.9606 5.10579 12.8174 5.0651 12.6709 5.03906C12.5244 5.01302 12.3633 5 12.1875 5C11.9271 5.00326 11.6781 5.03743 11.4404 5.10254C11.2028 5.16764 10.9798 5.26204 10.7715 5.38574C10.5632 5.50944 10.3727 5.65592 10.2002 5.8252C10.0277 5.99447 9.87956 6.1849 9.75586 6.39648C9.63216 6.60807 9.53776 6.83268 9.47266 7.07031C9.40755 7.30794 9.375 7.55534 9.375 7.8125C9.375 7.89063 9.37826 7.96712 9.38477 8.04199C9.39128 8.11686 9.40104 8.19173 9.41406 8.2666L5.47852 12.2021C5.32227 12.3617 5.20345 12.5407 5.12207 12.7393C5.04069 12.9378 5 13.1462 5 13.3643C5 13.5889 5.04395 13.8005 5.13184 13.999C5.21973 14.1976 5.33691 14.3717 5.4834 14.5215C5.62988 14.6712 5.80241 14.7884 6.00098 14.873C6.19954 14.9577 6.41113 15 6.63574 15C6.8571 15 7.06706 14.9593 7.26562 14.8779C7.46419 14.7965 7.6416 14.6777 7.79785 14.5215L11.7334 10.5859C11.8115 10.599 11.888 10.6087 11.9629 10.6152C12.0378 10.6217 12.1126 10.625 12.1875 10.625C12.4479 10.6217 12.6969 10.5876 12.9346 10.5225C13.1722 10.4574 13.3952 10.363 13.6035 10.2393C13.8118 10.1156 14.0023 9.96908 14.1748 9.7998C14.3473 9.63053 14.4954 9.4401 14.6191 9.22852C14.7428 9.01693 14.8372 8.79232 14.9023 8.55469C14.9674 8.31706 15 8.06966 15 7.8125C14.9935 7.63346 14.9788 7.4707 14.9561 7.32422C14.9333 7.17773 14.8942 7.03613 14.8389 6.89941C14.7835 6.7627 14.7217 6.6276 14.6533 6.49414Z" fill="#6D8CAC"/>
 </svg></span>
                     Технологии
-                </button>
+                </a>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button"
+                <a href="" class="nav-link text-decoration-none" id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button"
                         role="tab" aria-controls="profile" aria-selected="false">
                     <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.11266 13.7125L6.2877 12.8875L11.2374 7.93779L6.70018 7.93779V6.76634H13.2338V13.3L12.0624 13.3L12.0624 8.76274L7.11266 13.7125Z" fill="#6D8CAC" stroke="6D8CAC" stroke-width="1"/>
 </svg>
 </span>
                     Связаться
-                </button>
+                </a>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="sidebarCollapse" type="button"
                        >
@@ -600,21 +655,30 @@
         </ul>
         <div class='nav-addresses'>
             <div class="">
-               <h4>г. Москва</h4>
-                <p>Петровско-Разумовский проезд 19/1</p>
-                <h4>г. Кимры</h4>
-                <p>ул. Кленовая, 39</p>
+                <a href="#" class="text-decoration-none">
+                   <h4>г. Москва</h4>
+                    <p>Петровско-Разумовский проезд 19/1</p>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <h4>г. Кимры</h4>
+                    <p>ул. Кленовая, 39</p>
+                </a>
             </div>
             <div class>
-                <h4>hsn@hs-nauka.ru</h4>
+                <a href="mailto:hsn@hs-nauka.ru" class="text-decoration-none">
+                     <h4>hsn@hs-nauka.ru</h4>
+                </a>
             </div>
             <div class>
-                <h4>+7 (495) 755-77-00</h4>
+                <a href="tel:+7 (495) 755-77-00" class="text-decoration-none">
+                    <h4>+7 (495) 755-77-00</h4>
+                </a>
+
             </div>
         </div>
         <div class="contacts d-flex justify-content-between">
             <div class="lang">
-                <div class="lang-selected blue position-relative d-flex align-items-center">Eng</div>
+                <a href="#" class="lang-selected text-decoration-none blue position-relative d-flex align-items-center">Eng</a>
             </div>
             <div class="contact-us">
                 <a class="btn btn-primary btn-blue" data-bs-toggle="modal" href="#contactModal" role="button">связаться <span class="btn-arrow"></span></a>

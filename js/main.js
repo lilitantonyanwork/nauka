@@ -31,7 +31,9 @@ $(function (){
             clickable: true,
         }
     });
-    if($('body').hasClass('catalog-page')){
+    if($('body').hasClass('catalog-page') || $('body').hasClass('history-page')
+        || $('body').hasClass('license-page') || $('body').hasClass('post-page')){
+
         console.log('aaaa')
         Fancybox.bind("[data-fancybox]", {
             caption:false,
@@ -46,6 +48,7 @@ $(function (){
     }
 
         $('[data-toggle="tooltip"]').tooltip();
+
 
     $('#sidebarCollapse').on('click', function () {
        
@@ -62,4 +65,27 @@ $(function (){
         $('.product-type li').toggleClass('show');
         $(this).toggleClass('opened');
     })
+    $('.navbar-close').on('click',function (){
+        $('.navbar-collapse').removeClass('show')
+
+    })
+    $('.carousel').on('touchstart', function(event){
+        const xClick = event.originalEvent.touches[0].pageX;
+        $(this).one('touchmove', function(event){
+            const xMove = event.originalEvent.touches[0].pageX;
+            const sensitivityInPx = 5;
+
+            if( Math.floor(xClick - xMove) > sensitivityInPx ){
+                $(this).carousel('next');
+            }
+            else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+                $(this).carousel('prev');
+            }
+        });
+        $(this).on('touchend', function(){
+            $(this).off('touchmove');
+        });
+    });
+
+
 })
