@@ -23,6 +23,18 @@ $(function (){
             }
         }
     });
+    var swiper = new Swiper(".banner-slider.swiper", {
+        slidesPerView: 1,
+        allowTouchMove: true,
+        pagination: {
+            el: ".slider-pagination",
+            clickable: true,
+        },
+        navigation: {
+
+        },
+
+    });
     var product_swiper = new Swiper(".swiper-slider", {
         slidesPerView: 1,
         spaceBetween: 50,

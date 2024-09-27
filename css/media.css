@@ -14,6 +14,12 @@
     .product-type li p{
         word-break: break-all;
     }
+    .banner-slider .swiper-pagination-bullet{
+        max-width: 200px;
+    }
+    .banner img {
+        height: 654px;
+    }
 }
 @media screen and (max-width: 1200px){
     .navbar-brand{
@@ -766,6 +772,9 @@
     }
     .footer-top:before{
         display: none   ;
+    }
+    .banner-slider .swiper-pagination-bullet {
+        width: 20%;
     }
 }
 @media screen and (max-width: 600px){
@@ -1760,5 +1769,9 @@
     .page-404 p{
         font-size: 15px;
         margin-bottom: 30px;
+    }
+    .banner-slider .swiper-pagination-bullet{
+        max-width: 106px;
+        width: 20%;
     }
 }
